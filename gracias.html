@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tierra del vino</title>
+    <script src="https://kit.fontawesome.com/0d333ea443.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="to-top">
+            <a href="#"><i class="fa-solid fa-wine-glass fa-2xl"></i></a>
+        </div>
+        <header id="main-header">
+            <a href="index.html">
+                <h1 id="logo">MENDOZA</h1>
+            </a>
+            <!--
+            -->
+            <nav class="main-navigation">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <label for="check" class="lupa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="turismo.html">Turismo</a></li>
+                    <li><a href="vino.html">Tierra del vino</a></li>
+                    <li><a href="gastronomia.html">Gastronomía</a></li>
+                    <li><a href="formulario.html" id="underline">Contacto</a></li>
+                    <li>
+                        <a href="#"><i id="elipse" class="fa-solid fa-ellipsis fa-2x"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="expandable-div">
+            <p>-1°c</p>
+            <i class="fa-regular fa-snowflake fa-2x"></i>
+
+            <ul class="submenu">
+                <li>
+                    <a href="#" id="bandera"><img src="img/arg-flag.png" alt="Idioma castellano"></a>
+
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#"><img src="img/eng-flag.png" alt="Idioma inglés"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/bra-flag.png" alt="Idioma portugués"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/ger-flag.png" alt="Idioma alemán"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/chi-flag.png" alt="Idioma chino"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="search-bar">
+                <form>
+                    <input type="text" id="search" name="search" placeholder="Bodega..." />
+                    <button type="submit"><img src="img/lupa.png" alt="buscar" /></button>
+                </form>
+            </div>
+        </div>
+        <script>
+            document
+                .getElementById('elipse')
+                .addEventListener('click', function() {
+                    this.classList.toggle('rotated');
+                    document
+                        .getElementById('expandable-div')
+                        .classList.toggle('expanded');
+                });
+        </script>
+
+        <div class="linea-decorativa"></div>
+
+        <section id="thank" >
+            <h2 class="texto">Formulario enviado. ¡Estaremos en contacto!</h2>
+            <a href="formulario.html">
+                <div class="boton">
+                    <p class="texto">Volver</p>
+                </div>
+            </a>
+
+
+        </section>
+
+
+
+        <footer id="footer" class="gracias">
+            <div class="redes">
+                <a href="https://www.instagram.com/turismo.mendoza/" target="_blank"><i
+                        class="fa-brands fa-square-instagram fa-2x"></i></a>
+                <a href="https://x.com/mendoza_tur" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                <a href="https://www.youtube.com/@turismomendoza8258" target="_blank"><i
+                        class="fa-brands fa-youtube fa-2x"></i></a>
+            </div>
+
+            <div id="contenido">
+                <p class="texto">
+                    <b>Información turista</b>
+                    <br />Av. Peltier 793 (detrás de ATM), Ciudad de Mendoza EMETUR
+                    <br />Av. Peltier 793, Ciudad de Mendoza UPAT <br />Unidad Policial
+                    de Asistencia al Turista Av. San Martín 1143, Ciudad de Mendoza
+                    <br />Teléfono: +54 261 413-2135
+                </p>
+
+                <div id="parte-2">
+                    <p class="texto">
+                        <b>Inscripciones y servicios al Prestador:</b> <br />
+                        <a href="mailto:serviciosturisticos@mendoza.gov.ar">serviciosturisticos@mendoza.gov.ar</a>
+                    </p>
+
+                    <p class="texto">
+                        <b>Privacidad y seguridad</b>
+                    </p>
+                    <p class="texto"><b>Bases legales</b></p>
+                </div>
+
+                <figure>
+                    <a href="https://www.greatwinecapitals.com/capitals/mendoza-argentina/" target="_blank">
+                        <img src="img/logo-wine.png" alt="Logo wine" />
+                    </a>
+                </figure>
+            </div>
+            <div id="alumna" class="texto">
+                <p>
+                    Delfina Féraud - Maquetado y Desarrollo Web - Carlos Ferrer <br />
+            Este sitio es una entrega para el examen final del primer
+            cuatrimestre de la Escuela Da Vinci 2024.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

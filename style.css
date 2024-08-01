@@ -1,0 +1,1508 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #faebd7;
+}
+
+a{
+    text-decoration: none;
+}
+
+.checkbtn{
+    font-size: 40px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+.lupa{
+    font-size: 40px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#check{
+    display: none;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    
+}
+
+#main-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    color: #6d213c;
+    position: relative;
+    z-index:1;
+    
+}
+
+
+#main-header #logo{
+    padding: 20px 0;
+    font-size: 3rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+}
+
+#main-header a{
+    color: #6d213c; 
+    
+}
+
+
+#main-header .main-navigation ul{
+    display: flex;
+    align-items: center;
+}
+
+#main-header .main-navigation ul li{
+    list-style: none;
+}
+
+#main-header .main-navigation ul li a{
+    color: #6d213c;
+    margin-left: 40px;
+    font-size: 1.125rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400;
+}
+
+#main-header .main-navigation ul li a:hover{
+    text-decoration: underline;
+}
+
+
+
+#to-top{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+#to-top a{
+    display: block;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #b94b72;
+}
+
+
+/**/ 
+
+
+#elipse {
+    transition: transform 0.3s ease;
+  }
+  
+#elipse.rotated {
+    transform: rotate(90deg);
+  }
+
+  #expandable-div {
+    height: 0;
+    background-color: #6d213c;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    
+
+  }
+  
+  #expandable-div.expanded {
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    
+    
+    
+  }
+
+#expandable-div {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
+
+#expandable-div p{
+    color: #ffffff;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    font-size: 1.125rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400;
+    margin: 0 15px 5px;
+
+}
+#expandable-div i{
+    margin-right: 20px;
+    margin-left: -5px;
+    color: #ffffff;
+}
+
+
+.submenu li{
+    list-style-type: none;
+}
+
+.submenu #bandera{
+    margin: 4px;
+    
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #6d213c;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    
+  }
+
+  .dropdown li {
+    display: block;
+    
+  }
+
+  .dropdown li a {
+    display: block;
+    margin: 4px;
+
+    
+    
+  }
+
+  .submenu li:hover .dropdown {
+    display: block;
+  }
+
+
+
+  .search-bar {
+    width: 300px; 
+    margin: 0 ; 
+    margin-left: 700px;
+    background-color: #e1d5d9;
+    border-radius: 5px;
+    display: flex; 
+  }
+  
+  .search-bar form {
+    display: flex; 
+    flex: 1;
+  }
+  
+  .search-bar input[type="text"] {
+    flex: 1; 
+    background-color: #e1d5d9;
+    border: none;
+    outline: none; 
+    border-radius: 5px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    font-size: 1.125rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400;
+    color: #bab7b7;
+    margin-left: 6px;
+    
+  }
+  
+  .search-bar button {
+    background-color: #e1d5d9;
+    border: none;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+/**/
+
+#main-header .main-navigation ul li #underline{
+    text-decoration: underline;
+}
+
+.linea-decorativa::before {
+    content: '';
+    display: block;
+    border-top: 3px solid #baab68; 
+    margin: 10px 0 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+
+p{
+    margin: 10px 0 10px;
+}
+
+/* BODY HOME*/
+
+#foto-1{
+    margin-top: 50px;
+}
+
+.texto{
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    text-align: justify;
+
+}
+
+#box-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#box-1 #parrafo-1{
+    width: 55%;
+    margin-left: 100px;
+    color: #6d213c;
+    font-size: 1.125rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400;
+    
+}
+
+#box-1 #uvas{
+    display: flex;
+    justify-content: flex-end;
+    width: 35%;
+    margin-right: 100px;
+    
+}
+
+
+#box-2{
+    height: 900px;
+    width: auto;
+    position: absolute;
+    left: 0;
+    right: 0; 
+    background-image: url('img/fondo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#box-2 h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    color: white;
+    margin-top: 150px;
+}
+
+#box-2 #imagenes{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#box-2 #imagenes .enoturismo-aventura{
+    margin-top: 100px;
+}
+
+#box-2 #imagenes .vendimia-gastro{
+    margin-top: 50px;
+}
+#box-2 a{
+    color: #ffffff;
+}
+
+#box-2 #imagenes figcaption{
+    display: flex;
+    justify-content: center;
+    font-size: 2.25rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    text-align: center;
+    color: white;
+    margin-top: -40px;
+}
+
+#parrafo-2{
+    color: #6d213c;
+    font-size: 1.125rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400;
+    text-align-last: center;
+    margin-top: 900px;
+}
+
+
+#box-3 .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#box-3 a{
+    color: #ffffff;
+}
+
+
+
+#box-3 .wrapper #villavicencio,
+#box-3 .wrapper #las-leñas,
+#box-3 .wrapper #capital{
+    transition: transform 0.5s ease; 
+}
+
+#box-3 .wrapper #villavicencio:hover,
+#box-3 .wrapper #las-leñas:hover,
+#box-3 .wrapper #capital:hover{
+    transform: scale(1.2);
+}
+
+
+#box-3 .wrapper #potrerillos
+{
+    margin-top: 40px;
+    transition: transform 0.5s ease; 
+
+}
+
+
+#box-3 .wrapper #san-rafael
+{
+    margin-top: -5px;
+    transition: transform 0.5s ease; 
+}
+
+#box-3 .wrapper #tunuyan
+{
+    margin-top: 75px;
+    transition: transform 0.5s ease; 
+}
+
+#box-3 .wrapper #potrerillos:hover,
+#box-3 .wrapper #san-rafael:hover,
+#box-3 .wrapper #tunuyan:hover
+{
+    transform: scale(1.2);
+}
+
+#box-3 .wrapper figcaption{
+    display: flex;
+    justify-content: center;
+    font-size: 1.875rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}
+
+#titulo-villavicencio{
+    margin-top: -250px;
+}
+
+#titulo-leñas{
+    margin-top: -120px;
+    text-align: center;
+}
+#titulo-capital{
+    text-align: center;
+    margin-top: -150px;
+    
+}
+#titulo-potre{
+    margin-top: -230px;
+}
+#titulo-sanrafael{
+    margin-top: -132px;
+}
+
+#titulo-tunuyan{
+    margin-top: -240px;
+}
+
+
+#mapa{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/* BODY TURISMO */
+
+
+#turismo .anclas ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto 150px;
+    justify-content: center;
+
+}
+
+#turismo .anclas ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#turismo .anclas ul li a{
+    color: #6d213c;
+    margin-left: 30px;
+    font-size: 1.125rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400;
+    background-color: rgba(109, 33, 60, 0.3);
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+#turismo .anclas ul li a:hover{
+    color: #ffffff;
+    background-color: rgba(109, 33, 60, 0.6)
+}
+
+#turismo h2,
+#vino h2,
+#gastronomia h2,
+.contact h2,
+#thank h2
+{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 2.25rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    color: #6d213c; 
+    margin-top: 40px;
+}
+
+#turismo p, 
+#vino p,
+#gastronomia p,
+.contact > p
+{
+    display: flex;
+    justify-content: center;
+    font-size: 1.125rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    color: #6d213c;
+    text-align-last: center;
+    margin: 20px 0 40px;
+}
+
+
+.lugar{
+    display: flex;
+    
+}
+
+.lugar .texto{
+    margin-left: 20px;      
+    color: #6d213c;
+}
+
+.lugar img{
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.lugar li{
+    margin-left: 20px;
+}
+
+
+#puntos .fotos{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+#puntos .fotos img{
+    width: 280px;
+    margin: 20px 10px auto auto ;
+
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 30px;
+}
+
+
+
+
+
+
+/* BODY VINO */
+
+
+
+
+.varietales{
+    margin: 30px auto;
+    width: 90%;
+    display: flex;
+    
+    
+}
+
+
+.varietales #izquierda{
+    width: 60%;
+    background-image: url("img/mancha-vino.png");
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    
+}
+
+.varietales #izquierda h3{
+    margin: 30px 0 20px;
+    text-align: center;
+}
+
+.varietales #izquierda figure {
+    display: flex;
+    justify-content: center;
+}
+
+
+.varietales #izquierda figure a{
+    margin: 0 10px;
+}
+
+
+.varietales #img-vino{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.varietales #izquierda p{
+    font-size: 1.125rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    color: #6d213c;
+    text-align-last: center;
+}
+
+.varietales #izquierda h3{
+    font-size: 1.5rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    color: #6d213c;
+}
+
+
+
+
+
+.figuras{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+
+.proceso{
+    position: relative;
+    width: 484px;
+    height: 463px;
+    overflow: hidden;
+    background: rgba(111, 76, 49, 0.5);
+    transition: width 0.5s ease;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.proceso figcaption{
+    font-size: 1.875rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    color: #6d213c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+.proceso figcaption a{
+    color: #6d213c;
+}
+
+
+
+
+
+.proceso:hover {
+    width: 689px; 
+    background: rgba(111, 76, 49, 0.7);
+    margin: 0 10px;
+}
+
+.proceso img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 369px;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    margin-top: 30px;
+}
+
+
+.eventos .wrapper-evento{
+    display: flex;
+    justify-content: space-around;
+}
+
+section h3{
+    margin: 70px auto 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.875rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    color: #6d213c; 
+    
+}
+
+.wrapper-evento .evento{
+    width: 20%;
+    background-color: rgba(109, 33, 60, 0.2);
+    border-radius: 5%;
+    padding: 15px;
+    
+}
+
+.wrapper-evento .evento img{
+    width: 100%;
+    border-radius: 5%;
+    margin-bottom: 5px;
+}
+
+h4{
+    color: #6d213c;
+    font-size: 1.1rem;
+    
+}
+
+.evento p{
+    color: #52333e;
+}
+
+
+
+.boton{
+    background-color: #6d213c;
+    margin: 15px auto;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.boton p{
+    color: #ffffff;    
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 10px;
+
+}
+
+.boton:hover{
+    background-color: rgba(109, 33, 60, 0.6)
+}
+
+
+.wrapper-noticia .noticia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.caja-noticia{
+    background-color: rgba(177, 135, 104, 0.9);
+    border-radius: 10px;
+    width: 40%;
+    height: 270px;
+    padding: 20px;
+    margin-left: -100px;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.caja-noticia h4{
+    font-size: 1.4rem;
+    text-align: center;
+    
+}
+
+.caja-noticia p{
+    color: #ffffff;
+    text-align-last: center;
+    margin: 10px;
+}
+
+
+/* BODY CONTACTO */
+
+
+#section-1.contact,
+#section-1.thank{
+    text-align: center;
+    color: #6d213c;
+}
+
+#section-1.contact #wrapper-form{
+    width: 100%;
+    display: flex;
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+
+form > div{
+    margin: 30px 0;
+
+}
+
+form label,
+.down p{
+    font-weight: 700;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+
+form .input label{
+    font-weight: 400;
+}
+
+
+.down label,
+.down input{
+    display: block;
+    
+}
+
+.input {
+    width: 300px;
+}
+.contact
+input[type=radio],
+input[type=checkbox]{
+    margin-top: 15px;
+}
+
+.input label{
+    margin-right: 60px;
+}
+
+.contact
+input[type=text],
+input[type=tel],
+input[type=number],
+input[type=email]{
+    display: block;
+    width: 80%;
+    padding: 0.5rem 0.5rem;
+    border: 0;
+    background-color: #e1d5d9;
+    border-radius: 8px;
+}
+
+.contact
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+textarea:focus{
+    outline: 0;
+    border: #6d213c 2px solid;
+}
+
+#section-1 img{
+    width: 600px;
+    margin-top: 30px;
+}
+
+textarea{
+    resize: none;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+input[type=submit]{
+    background-color: transparent;
+    border: none;
+    font-size: 1.125rem;
+    color: #ffffff;
+    background-color: #6d213c;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+input[type=submit]:hover{
+    background-color: rgba(109, 33, 60, 0.6)
+}
+
+
+
+/* FOOTER */
+
+#footer{
+    background-color: #6d213c;
+    height: 300px;
+    margin-top: 100px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#footer.gracias{
+    margin-top: 175px;
+    bottom: 0;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    
+}
+
+.redes i{
+    margin: 0 15px;
+}
+
+
+.redes a{
+    color: #ffffff;
+}
+#footer #contenido{
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex; 
+    justify-content: space-between;
+}
+
+
+#footer p{
+    color: #ffffff;
+}
+
+#footer #parte-2{
+    margin-left: 50px;
+}
+
+#footer #parte-2 p{
+    margin-bottom: 10px;
+}
+#footer #parte-2 a{
+    
+    color: #ffffff;
+}
+
+#footer figure{
+    margin-right: 50px;
+    margin-top: -20px;
+}
+
+#footer figure a{
+    color: white;
+}
+
+#alumna{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 480px){
+
+    .checkbtn{
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        padding-left: 20px;
+    }
+
+    .lupa{
+        display:inline-block;
+        padding-right: 20px;
+
+    }
+
+    #main-header{
+        padding-left: 30px;
+        margin-bottom: -10px;
+
+    }
+
+    #main-header #logo{
+        margin-left: 90px;
+
+    }
+
+    #main-header .main-navigation ul{
+        position: fixed;
+        width: 40%;
+        height: 100%;
+        background-color: #6d213c;
+        top: 101px;
+        left: -100%;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #main-header .main-navigation ul li{
+        padding-top: 10px;
+    }
+    
+    #main-header .main-navigation ul li a{
+        font-size: 1.25em;
+        color: #faebd7;
+        margin: 10px;
+        
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+
+    #elipse,
+    #expandable-div{
+        display: none;
+    }
+
+    
+    #footer{
+        height: auto;
+    }
+
+    .redes{
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+    
+    #footer #contenido{
+        max-width: 480px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    #footer #parte-2{
+        margin-left: 0px;
+        position: relative;
+    }
+
+    #footer figure{
+        margin-left: 280px;
+        margin-top: 110px;
+        position: absolute;
+    }
+    
+    #alumna{
+        font-size: 0.5em;
+    }
+    
+    #box-1 #uvas{
+        display: none;
+    }
+    
+    #box-1 #parrafo-1
+    {
+        width: 100%;
+        margin: 0 10px;
+        text-align-last: center;
+    }
+
+    #parrafo-2{
+        width: 100%;
+        padding: 0 10px;
+        text-align-last: center;
+        margin-top: 900px;
+    }
+
+    
+    #box-2 h2{
+        font-size: 2em;
+        margin-top: 120px;
+    }
+
+    #box-2 #imagenes{
+        max-width: 480px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto 5px;
+    }
+
+    #box-2 img{
+        width: 200px;
+    }
+
+    #box-2 #imagenes figcaption{
+        font-size: 1.25em;
+        margin-top: -60px;
+    }
+
+    #box-2 #imagenes .enoturismo-aventura{
+        margin-top: 30px;
+    }
+    
+    #box-2 #imagenes .vendimia-gastro{
+        margin-top: 50px;
+    }
+
+
+    #box-3{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    #box-3 img{
+        width: 305px;
+    }
+
+    #box-3 .wrapper{
+        width: 305px;
+        height: 270px;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        
+
+    }
+
+
+    #box-3 .wrapper #villavicencio,
+    #box-3 .wrapper #las-leñas,
+    #box-3 .wrapper #capital,
+    #box-3 .wrapper #potrerillos,
+    #box-3 .wrapper #san-rafael,
+    #box-3 .wrapper #tunuyan{
+        margin-top: 0px;
+        border-radius: 20px;
+        flex: 1 0 100%;
+        scroll-snap-align: center;
+        transition: none;
+        object-fit: cover;
+        height: 213px;
+    }
+
+    #box-3 .wrapper #villavicencio:hover,
+    #box-3 .wrapper #las-leñas:hover,
+    #box-3 .wrapper #capital:hover,
+    #box-3 .wrapper #potrerillos:hover,
+    #box-3 .wrapper #san-rafael:hover,
+    #box-3 .wrapper #tunuyan:hover{
+    transform: none;
+}
+
+
+    
+
+    
+    #box-3 .button-holder
+    {
+        position: absolute;
+        bottom: 8%;
+        display: flex;
+        z-index: 1;
+        
+    }
+
+    #box-3 .wrapper figcaption{
+        font-size: 1.5rem;
+    }
+
+    #titulo-villavicencio,
+    #titulo-leñas,
+    #titulo-capital,
+    #titulo-potre,
+    #titulo-sanrafael,
+    #titulo-tunuyan
+    {
+        margin-top: -180px;
+    }
+
+    #mapa{
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+    
+
+    #turismo p{
+        padding: 10px;
+    }
+
+    #turismo .anclas ul{
+        display: none;
+    }
+
+    .lugar{
+        display: block;
+    }
+
+    .lugar img{
+        width: 100%;
+    }
+
+    .lugar .texto{
+        margin-left: 0px;
+    }
+
+    #puntos{
+        margin: 0 10px;
+    }
+
+    #puntos .fotos{
+        justify-content: flex-start;
+    }
+    #puntos .fotos img{
+        width: 280px;
+        margin: 0;
+    }    
+
+    #puntos #foto-villavicencio,
+    #puntos #foto-sanrafael,
+    #puntos #foto-salen,
+    #puntos #foto-ruta{
+        display: none;
+    }
+
+    .wrapper-turismo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .wrapper-turismo .fotos{
+        width: 280px;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+    }
+
+    .wrapper-turismo .fotos img{
+        margin-top: 0px;
+        border-radius: 20px;
+        flex: 1 0 100%;
+        scroll-snap-align: center;
+        object-fit: cover;
+    }
+
+    .wrapper-turismo .button-holder
+    {
+        position: absolute;
+        display: flex;
+        z-index: 1;
+        bottom: -15%;
+    }
+
+
+    #vino{
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .varietales #img-vino{
+        display: none;
+    }
+
+    .varietales{
+        margin: 0px;
+        width: 100%;
+        
+    }
+
+    .varietales #izquierda{
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .figuras{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .proceso{
+        width: 100%;
+        height: 300px;
+        transition: none;
+        margin: 20px 0;
+    }
+
+    .proceso img{
+        height: 200px;
+    }
+
+    .proceso:hover{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .eventos{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .eventos .wrapper-evento{
+        justify-content: flex-start;
+        position: relative;
+        width: 280px;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+    }
+
+
+    .wrapper-evento .evento{
+        margin-top: 0px;
+        border-radius: 20px;
+        flex: 1 0 100%;
+        scroll-snap-align: center;
+        object-fit: cover;
+    }
+
+    .eventos .button-holder
+    {
+        position: absolute;
+        display: flex;
+        z-index: 1;
+        margin-top: 350px;
+    }
+
+    #box-3 .button-holder a,
+    .wrapper-turismo .button-holder a,
+    .eventos .button-holder a,
+    .noticias .button-holder a{
+        background-color: #6d213c;
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        display: inline-block;
+        margin: .3rem;
+        transition: opacity ease 250ms;
+        opacity: 0.2;
+    }
+
+    #box-3 .button-holder a:hover,
+    .wrapper-turismo .button-holder a:hover,
+    .eventos .button-holder a:hover,
+    .noticias .button-holder a:hover
+    {   
+         opacity: 1;
+    }
+
+
+    .noticias{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .noticias .wrapper-noticia{
+        display: flex;
+        justify-content: flex-start;
+        /* margin: 10px; */
+        width: 450px;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        
+    }
+
+    .wrapper-noticia .noticia{
+        margin-top: 0px;
+        border-radius: 20px;
+        flex: 1 0 100%;
+        scroll-snap-align: center;
+        object-fit: cover;
+        /* width: 450px; */
+        position: relative;
+    }
+
+    .caja-noticia{
+        width: 430px;
+        margin-left: 8px;
+        position: absolute;
+        background-color: rgba(177, 135, 104, 0.7);
+    }
+    .caja-noticia p{
+        font-size: 0.9rem;
+    }
+
+    .noticia img{
+        width: 450px;
+    }
+
+    .noticias .button-holder
+    {
+        position: absolute;
+        display: flex;
+        z-index: 1;
+        margin-top: 320px;
+    }
+
+    #gastronomia{
+        margin: 10px;
+    }
+
+    #section-1.contact{
+        margin: 10px;
+    }
+
+    form > div label,    
+    form > div input{
+        margin: 10px 0;       
+    }
+
+    form label,
+    .down p{
+    width: 100%;
+    }
+
+    #section-1 figure{
+        display: none;
+    }
+
+    #section-1.contact #wrapper-form{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    #wrapper-form form{
+        width: 70%;   
+        margin: 20px;
+        text-align: center;  
+    }
+
+    .input label{
+        margin-right: 0px;
+    }
+
+    .down label,
+    .down input{
+    display: inline;
+    }
+
+    #cumple.down,
+    #presu.down,
+    #estacion.down{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+    .input{
+        width: 100%;
+    }
+
+    .contact
+    input[type=text],
+    input[type=tel],
+    input[type=number],
+    input[type=email]{
+    
+    width: 100%;
+    
+    }
+
+    textarea{
+        width: 100%;
+    }
+       
+    #thank h2{
+        text-align: center;
+    }
+
+    #footer.gracias{
+        margin-top: 50px;
+        bottom: 0;
+    }   
+    
+}
+
+@media screen and (max-width: 409px){
+
+    #box-2 img{
+        width: 150px;
+    }
+
+    
+
+}

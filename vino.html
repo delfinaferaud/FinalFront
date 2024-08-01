@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tierra del vino</title>
+    <script src="https://kit.fontawesome.com/0d333ea443.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="to-top">
+            <a href="#"><i class="fa-solid fa-wine-glass fa-2xl"></i></a>
+        </div>
+        <header id="main-header">
+            <a href="index.html">
+                <h1 id="logo">MENDOZA</h1>
+            </a>
+            <!--
+            -->
+            <nav class="main-navigation">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <label for="check" class="lupa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="turismo.html">Turismo</a></li>
+                    <li><a href="vino.html" id="underline">Tierra del vino</a></li>
+                    <li><a href="gastronomia.html">Gastronomía</a></li>
+                    <li><a href="formulario.html">Contacto</a></li>
+                    <li>
+                        <a href="#"><i id="elipse" class="fa-solid fa-ellipsis fa-2x"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="expandable-div">
+            <p>-1°c</p>
+            <i class="fa-regular fa-snowflake fa-2x"></i>
+
+            <ul class="submenu">
+                <li>
+                    <a href="#" id="bandera"><img src="img/arg-flag.png" alt="Idioma castellano"></a>
+
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#"><img src="img/eng-flag.png" alt="Idioma inglés"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/bra-flag.png" alt="Idioma portugués"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/ger-flag.png" alt="Idioma alemán"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/chi-flag.png" alt="Idioma chino"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="search-bar">
+                <form>
+                    <input type="text" id="search" name="search" placeholder="Bodega..." />
+                    <button type="submit"><img src="img/lupa.png" alt="buscar" /></button>
+                </form>
+            </div>
+        </div>
+        <script>
+            document
+                .getElementById('elipse')
+                .addEventListener('click', function() {
+                    this.classList.toggle('rotated');
+                    document
+                        .getElementById('expandable-div')
+                        .classList.toggle('expanded');
+                });
+        </script>
+
+        <div class="linea-decorativa"></div>
+
+
+        <section id="vino">
+            <h2 class="texto">Tierra del Vino</h2>
+            <p class="texto">
+                Mendoza es el principal productor y exportador de vino en Argentina. Con más de 150.000 hectáreas de
+                viñedos, proporciona el 70% de la producción de vino del país. Sus 800 bodegas constituyen el mayor
+                número en Argentina. La industria vitivinícola de Mendoza genera el 50% de las exportaciones totales de
+                la provincia, representando más del 80% de las exportaciones de vino de Argentina. Argentina es el mayor
+                exportador de mosto del mundo y Mendoza contribuye con la mitad de ello.
+            </p>
+            <figure>
+                <img srcset="img/bodega-chica.svg"
+                src="img/bodega.jpg" alt="Bodega">
+            </figure>
+        </section>
+
+        <section class="varietales">
+            <div id="izquierda">
+                <p class="texto">
+                    Es un desierto con solo 200 mm de precipitación anual y más de 320 días soleados al año. Debido a
+                    esto, un elaborado sistema de canales, que se remonta a tiempos precolombinos, distribuye el agua
+                    proveniente del deshielo hacia los viñedos. El clima templado y el suelo ideal permiten el cultivo
+                    de variedades de uva de alta calidad y viñedos saludables, ofreciendo excelentes condiciones para la
+                    producción orgánica y biodinámica. La amplitud térmica debido a la alta altitud proporciona baja
+                    humedad y aumenta la exposición al sol, condiciones ideales
+                    para la producción de uvas.
+                </p>
+                <h3 class="texto">Explorá los distintos varietales</h3>
+                <figure>
+                    <a href="#"><img src="img/vinotinto.png" alt="Vino tinto ícono"></a>
+                    <a href="#"><img src="img/vinoblanco.png" alt="Vino blanco ícono"></a>
+                </figure>
+            </div>
+            <figure id="img-vino">
+                <img src="img/fotovino.jpg" alt="Vino">
+            </figure>
+        </section>
+
+
+        <section class="figuras">
+            <figure class="proceso">
+                <a href="#"><img src="img/vino-entera.jpg" alt="Ruta del vino">
+                </a>
+                <figcaption class="texto"><a href="#">Ruta del vino</a></figcaption>
+            </figure>
+            <figure class="proceso">
+                <a href="#"><img src="img/proceso-entera.jpg" alt="Proceso y vendimia">
+                </a>
+                <figcaption class="texto">
+                    <a href="#">Proceso y vendimia</a>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h3 class="texto">
+                Próximos eventos
+            </h3>
+
+            <div class="eventos">
+                <div class="wrapper-evento">
+
+                    <div class="evento" id="evento-1">
+                            <figure>
+                            <img src="img/evento-1.jpg" alt="">
+                        </figure>
+                        <h4 class="texto">MAGIA Y VINO - TIERRAS ALTAS by Agustin Saitta</h4>
+                        <p class="texto">6 de julio - 9:00 PM</p>
+                        <p class="texto">Bodega Tierras Altas</p>
+                        
+                        <a href="#">
+                            <div class="boton">
+                                <p class="texto">Comprar</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="evento" id="evento-2">
+                        <figure>
+                            <img src="img/evento-2.jpg" alt="">
+                        </figure>
+                        <h4 class="texto">Degustación de Vinos y Quesos en Chacras de Coria</h4>
+                        <p class="texto">11 de julio - 6:00 PM</p>
+                        <p class="texto">Bodega Cánepa Martín</p>
+
+                        <a href="#">
+                            <div class="boton">
+                                <p class="texto">Comprar</p>
+                            </div>
+                        </a>
+                    </div>
+                
+                
+                    <div class="evento" id="evento-3">
+                        <figure>
+                            <img src="img/evento-4.jpg" alt="">
+                        </figure>
+                        <h4 class="texto">Martino Wines recibe a Mad Pasta</h4>
+                        <p class="texto">29 de julio - 8:00 PM</p>
+                        <p class="texto">Martino Wines</p>
+                        
+                        <a href="#">
+                            <div class="boton">
+                                <p class="texto">Comprar</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="evento" id="evento-4">
+                        <figure>
+                            <img src="img/evento-3.jpg" alt="">
+                        </figure>
+                        <h4 class="texto">WINE EXPO PRESENTA SU 11° EDICIÓN</h4>
+                        <p class="texto">15 y 16 de agosto - 6:00 PM</p>
+                        <p class="texto">Hotel Hilton</p>
+                        
+                        <a href="#">
+                            <div class="boton">
+                                <p class="texto">Comprar</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="button-holder">
+                    <a href="#evento-1" id="button-1"></a>
+                    <a href="#evento-2" id="button-2"></a>
+                    <a href="#evento-3" id="button-3"></a>
+                    <a href="#evento-4" id="button-4"></a>
+                  </div>
+
+            </div>
+
+        </section>
+
+        <section>
+            <h3 class="texto">
+                Noticias destacadas del mes
+            </h3>
+
+            <div class="noticias">
+
+                <div class="wrapper-noticia">
+
+                
+                <div class="noticia" id="noticia-1">
+                    <figure>
+                        <img src="img/noticia-1.jpg" alt="">
+                    </figure>
+
+                    <div class="caja-noticia">
+                        <h4 class="texto">World's Best Vineyards 2023</h4>
+                        <p class="texto">En esta edición, Mendoza nuevamente ocupa un lugar protagónico en el conteo
+                            de World's Best Vineyards con las bodegas Catena Zapata en el lugar número 9, Trapiche en el
+                            17, El Enemigo Wines y Salentein en los puestos 21 y 25 respectivamente. Las cuatro empresas
+                            mendocinas son, por este año, las representantes argentinas de la lista de los mejores 50
+                            viñedos.</p>
+                        <a href="#">
+                            <div class="boton">
+                                <p class="texto">Leer más</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="noticia" id="noticia-2">
+                    <figure>
+                        <img src="img/noticia-2.jpg" alt="">
+                    </figure>
+
+                    <div class="caja-noticia">
+                        <h4 class="texto">El efecto Britney Spears para Bodega Norton</h4>
+                        <p class="texto">El Malbec que "enamoró" a Spears es un blend de terroirs cosecha 2019 de
+                            viñedos de Luján de Cuyo y Valle de Uco. <q>El vino REAL también se siente extremadamente
+                                agradable! ¡Psss la primera vez con vino real. Jesucristo!</q>, escribió como epígrafe
+                            de la foto. ¿Movida de marketing? ¿Pauta? Para nada, desde Norton se enteraron por el mismo
+                            posteo que realizó la cantante.</p>
+                        <a href="#">
+                            <div class="boton">
+                                <p class="texto">Leer más</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                </div>
+
+                <div class="noticia" id="noticia-3">
+                    <figure>
+                        <img src="img/noticia-3.jpg" alt="">
+                    </figure>
+
+                    <div class="caja-noticia">
+                        <h4 class="texto">Los clásicos también se renuevan: las nuevas etiquetas de Bodega López</h4>
+                        <p class="texto">En Bodega López tuvo lugar una cena organizada por Carlos y Eduardo López
+                            (4ta generación <abbr title="Familiar">fliar</abbr> al mando de la bodega), quienes junto a
+                            su equipo enológico presentaron para la prensa la renovación de uno de los productos más
+                            históricos que posee la misma. </p>
+                        <a href="#">
+                            <div class="boton">
+                                <p class="texto">Leer más</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <div class="button-holder">
+                    <a href="#noticia-1" id="button-5"></a>
+                    <a href="#noticia-2" id="button-6"></a>
+                    <a href="#noticia-3" id="button-7"></a>
+                  </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <footer id="footer">
+            <div class="redes">
+                <a href="https://www.instagram.com/turismo.mendoza/" target="_blank"><i
+                        class="fa-brands fa-square-instagram fa-2x"></i></a>
+                <a href="https://x.com/mendoza_tur" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                <a href="https://www.youtube.com/@turismomendoza8258" target="_blank"><i
+                        class="fa-brands fa-youtube fa-2x"></i></a>
+            </div>
+
+            <div id="contenido">
+                <p class="texto">
+                    <b>Información turista</b>
+                    <br />Av. Peltier 793 (detrás de ATM), Ciudad de Mendoza EMETUR
+                    <br />Av. Peltier 793, Ciudad de Mendoza UPAT <br />Unidad Policial
+                    de Asistencia al Turista Av. San Martín 1143, Ciudad de Mendoza
+                    <br />Teléfono: +54 261 413-2135
+                </p>
+
+                <div id="parte-2">
+                    <p class="texto">
+                        <b>Inscripciones y servicios al Prestador:</b> <br />
+                        <a href="mailto:serviciosturisticos@mendoza.gov.ar">serviciosturisticos@mendoza.gov.ar</a>
+                    </p>
+
+                    <p class="texto">
+                        <b>Privacidad y seguridad</b>
+                    </p>
+                    <p class="texto"><b>Bases legales</b></p>
+                </div>
+
+                <figure>
+                    <a href="https://www.greatwinecapitals.com/capitals/mendoza-argentina/" target="_blank">
+                        <img src="img/logo-wine.png" alt="Logo wine" />
+                    </a>
+                </figure>
+            </div>
+            <div id="alumna" class="texto">
+                <p>
+                    Delfina Féraud - Maquetado y Desarrollo Web - Carlos Ferrer <br />
+            Este sitio es una entrega para el examen final del primer
+            cuatrimestre de la Escuela Da Vinci 2024.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

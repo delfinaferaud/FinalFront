@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Mendoza</title>
+    <script
+      src="https://kit.fontawesome.com/0d333ea443.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" >
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="to-top">
+        <a href="#"><i class="fa-solid fa-wine-glass fa-2xl"></i></a>
+      </div>
+      <header id="main-header">
+        <a href="index.html">
+          <h1 id="logo">MENDOZA</h1>
+        </a>
+        <!--
+                -->
+        <nav class="main-navigation">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <label for="check" class="lupa">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+          <ul>
+            <li><a href="index.html" id="underline">Inicio</a></li>
+            <li><a href="turismo.html">Turismo</a></li>
+            <li><a href="vino.html">Tierra del vino</a></li>
+            <li><a href="gastronomia.html">Gastronomía</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+            <li>
+              <a href="#"
+                ><i id="elipse" class="fa-solid fa-ellipsis fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="expandable-div">
+        <p>-1°c</p>
+        <i class="fa-regular fa-snowflake fa-2x"></i>
+
+        <ul class="submenu">
+          <li>
+            <a href="#" id="bandera"
+              ><img src="img/arg-flag.png" alt="Idioma castellano"
+            ></a>
+
+            <ul class="dropdown">
+              <li>
+                <a href="#"
+                  ><img src="img/eng-flag.png" alt="Idioma inglés"
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/bra-flag.png" alt="Idioma portugués"
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/ger-flag.png" alt="Idioma alemán"
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/chi-flag.png" alt="Idioma chino"
+                ></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="search-bar">
+          <form>
+            <input
+              type="text"
+              id="search"
+              name="search"
+              placeholder="Bodega..."
+            >
+            <button type="submit">
+              <img src="img/lupa.png" alt="buscar" >
+            </button>
+          </form>
+        </div>
+      </div>
+      <script>
+        document
+          .getElementById('elipse')
+          .addEventListener('click', function () {
+            this.classList.toggle('rotated');
+            document
+              .getElementById('expandable-div')
+              .classList.toggle('expanded');
+          });
+      </script>
+
+      <div class="linea-decorativa"></div>
+
+      <section id="body">
+        <figure>
+          <img
+            srcset="img/argentina-chica2.svg 480w"
+            sizes="(max-width: 480px) 480px"
+            src="img/argentina.jpg"
+            alt="Mendoza, Argentina"
+            id="foto-1"
+          >
+        </figure>
+
+        <section>
+          <div id="box-1">
+            <div class="texto" id="parrafo-1">
+              <p>
+                En el corazón de la cordillera de los Andes, Mendoza se
+                encuentra en la parte central oeste de Argentina, en la región
+                de Cuyo. Está estratégicamente ubicada en el cruce de las
+                principales rutas nacionales (<abbr title="Ruta Nacional"
+                  >RN</abbr
+                >40 y RN7) y en medio del "corredor bioceánico" que conecta los
+                océanos Atlántico y Pacífico.
+              </p>
+
+              <p>
+                Fundada en 1561 por el Capitán español
+                <strong>Pedro del Castillo</strong>, la provincia fue
+                reconstruida en 1861 después de un terremoto. Hacia la década de
+                1890, Mendoza atrajo a migrantes europeos que desarrollaron la
+                industria vitivinícola y la región comenzó a crecer rápidamente.
+                El vino se convirtió en parte del ADN de Mendoza.
+              </p>
+
+              <p>
+                Tiene una superficie de 148,827 km2 (57,462 millas cuadradas) y
+                casi 2 millones de habitantes. Su crecimiento constante en los
+                últimos años y la diversificación de sus actividades productivas
+                han convertido a Mendoza en una de las provincias más
+                desarrolladas del país y en el
+                <strong>principal polo industrial</strong> del oeste de
+                Argentina.
+              </p>
+            </div>
+            <figure id="uvas">
+              <img src="img/uvas.jpg" alt="Uvas">
+            </figure>
+          </div>
+        </section>
+
+        <section>
+          <div id="box-2">
+            <h2 class="texto">Descubrí lo mejor de Mendoza</h2>
+            <div id="imagenes">
+              <figure>
+                <a href="#">
+                  <img
+                    src="img/enoturismo.jpg"
+                    alt="Enoturismo"
+                    class="enoturismo-aventura"
+                ></a>
+                <figcaption class="texto">
+                  <a href="#">Enoturismo</a>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="#">
+                  <img 
+                    src="img/vendimia.jpg"
+                    alt="Vendimia"
+                    class="vendimia-gastro"
+                  >
+                </a>
+                <figcaption class="texto"><a href="#">Vendimia</a></figcaption>
+              </figure>
+
+              <figure>
+                <a href="#">
+                  <img
+                    src="img/aventura.jpg"
+                    alt="Aventura"
+                    class="enoturismo-aventura"
+                  >
+                </a>
+                <figcaption class="texto">
+                  <a href="#">Turismo<br />Aventura</a>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="#">
+                  <img
+                    src="img/gastronomia.png"
+                    alt="Gastronomía"
+                    class="vendimia-gastro"
+                  >
+                </a>
+                <figcaption class="texto">
+                  <a href="#">Gastronomía</a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="texto" id="parrafo-2">
+            <p>
+              Mendoza se destaca por su capital humano, infraestructura,
+              recursos naturales y su compromiso con el
+              <em>desarrollo económico sostenible</em>. Es conocida por su
+              producción agrícola e industrialización de materias primas como
+              uvas, frutas y verduras. Otros sectores importantes son el
+              metal-mecánico, la ingeniería, la construcción, el comercio, los
+              servicios, la educación y las
+              <abbr
+                title="Tecnologías de la información y
+            comunicación"
+                >TIC</abbr
+              >. Mendoza se ha convertido en uno de los principales destinos
+              turísticos debido a su magnífica belleza natural, excelentes
+              servicios e infraestructura. El petróleo, gas, la minería
+              sostenible y la energía renovable también son sectores clave para
+              la economía local.
+            </p>
+          </div>
+          <div id="box-3">
+            <div class="wrapper">
+              <figure>
+                <a href="turismo.html#villavicencio-ancla">
+                  <img
+                    src="img/villavicencio.png"
+                    alt="villavicencio"
+                    id="villavicencio"
+                  >
+                </a>
+                <figcaption class="texto" id="titulo-villavicencio">
+                  <a href="#">Villavicencio</a>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="turismo.html#las-leñas-ancla">
+                  <img
+                    src="img/las-leñas.png"
+                    alt="Las Leñas"
+                    id="las-leñas"
+                  >
+                </a>
+                <figcaption class="texto" id="titulo-leñas">
+                  <a href="#">Las <br />Leñas</a>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="turismo.html#ciudad-mendoza-ancla">
+                  <img
+                    src="img/capital.png"
+                    alt="Mendoza Capital"
+                    id="capital"
+                  >
+                </a>
+                <figcaption class="texto" id="titulo-capital">
+                  <a href="#">Mendoza <br />Capital</a>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="turismo.html#cacheuta-ancla">
+                  <img
+                    src="img/potrerillos.png"
+                    alt="Potrerillos"
+                    id="potrerillos"
+                  >
+                </a>
+                <figcaption class="texto" id="titulo-potre">
+                  <a href="#">Potrerillos</a>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="turismo.html#san-rafael-ancla">
+                  <img
+                    src="img/san-rafael.png"
+                    alt="San Rafael"
+                    id="san-rafael"
+                  >
+                </a>
+                <figcaption class="texto" id="titulo-sanrafael">
+                  <a href="#">San Rafael</a>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <a href="turismo.html#tunuyan-ancla">
+                  <img
+                    src="img/tunuyan.png"
+                    alt="Valle de Uco"
+                    id="tunuyan"
+                  >
+                </a>
+                <figcaption class="texto" id="titulo-tunuyan">
+                  <a href="#">Valle de Uco</a>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="button-holder">
+              <a href="#villavicencio" id="button-1"></a>
+              <a href="#las-leñas" id="button-2"></a>
+              <a href="#capital" id="button-3"></a>
+              <a href="#potrerillos" id="button-4"></a>
+              <a href="#san-rafael" id="button-5"></a>
+              <a href="#tunuyan" id="button-6"></a>
+            </div>
+          </div>
+        </section>
+
+        <div id="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53609.02222865099!2d-68.89971913904144!3d-32.883256365094795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1719952104581!5m2!1ses-419!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <footer id="footer">
+        <div class="redes">
+          <a href="https://www.instagram.com/turismo.mendoza/" target="_blank"
+            ><i class="fa-brands fa-square-instagram fa-2x"></i
+          ></a>
+          <a href="https://x.com/mendoza_tur" target="_blank"
+            ><i class="fa-brands fa-twitter fa-2x"></i
+          ></a>
+          <a href="https://www.youtube.com/@turismomendoza8258" target="_blank"
+            ><i class="fa-brands fa-youtube fa-2x"></i
+          ></a>
+        </div>
+
+        <div id="contenido">
+          <p class="texto">
+            <b>Información turista</b>
+            <br />Av. Peltier 793 (detrás de ATM), Ciudad de Mendoza EMETUR
+            <br />Av. Peltier 793, Ciudad de Mendoza UPAT <br />Unidad Policial
+            de Asistencia al Turista Av. San Martín 1143, Ciudad de Mendoza
+            <br />Teléfono: +54 261 413-2135
+          </p>
+
+          <div id="parte-2">
+            <p class="texto">
+              <b>Inscripciones y servicios al Prestador:</b> <br />
+              <a href="mailto:serviciosturisticos@mendoza.gov.ar"
+                >serviciosturisticos@mendoza.gov.ar</a
+              >
+            </p>
+
+            <p class="texto">
+              <b>Privacidad y seguridad</b>
+            </p>
+            <p class="texto"><b>Bases legales</b></p>
+          </div>
+
+          <figure>
+            <a
+              href="https://www.greatwinecapitals.com/capitals/mendoza-argentina/"
+              target="_blank"
+            >
+              <img src="img/logo-wine.png" alt="Logo wine" />
+            </a>
+          </figure>
+        </div>
+        <div id="alumna" class="texto">
+          <p>
+            Delfina Féraud - Maquetado y Desarrollo Web - Carlos Ferrer <br />
+            Este sitio es una entrega para el examen final del primer
+            cuatrimestre de la Escuela Da Vinci 2024.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

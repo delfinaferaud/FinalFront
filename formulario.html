@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tierra del vino</title>
+    <script src="https://kit.fontawesome.com/0d333ea443.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="to-top">
+            <a href="#"><i class="fa-solid fa-wine-glass fa-2xl"></i></a>
+        </div>
+        <header id="main-header">
+            <a href="index.html">
+                <h1 id="logo">MENDOZA</h1>
+            </a>
+            <!--
+            -->
+            <nav class="main-navigation">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <label for="check" class="lupa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="turismo.html">Turismo</a></li>
+                    <li><a href="vino.html">Tierra del vino</a></li>
+                    <li><a href="gastronomia.html">Gastronomía</a></li>
+                    <li><a href="formulario.html" id="underline">Contacto</a></li>
+                    <li>
+                        <a href="#"><i id="elipse" class="fa-solid fa-ellipsis fa-2x"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="expandable-div">
+            <p>-1°c</p>
+            <i class="fa-regular fa-snowflake fa-2x"></i>
+
+            <ul class="submenu">
+                <li>
+                    <a href="#" id="bandera"><img src="img/arg-flag.png" alt="Idioma castellano"></a>
+
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#"><img src="img/eng-flag.png" alt="Idioma inglés"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/bra-flag.png" alt="Idioma portugués"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/ger-flag.png" alt="Idioma alemán"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/chi-flag.png" alt="Idioma chino"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="search-bar">
+                <form>
+                    <input type="text" id="search" name="search" placeholder="Bodega..." />
+                    <button type="submit"><img src="img/lupa.png" alt="buscar" /></button>
+                </form>
+            </div>
+        </div>
+        <script>
+            document
+                .getElementById('elipse')
+                .addEventListener('click', function() {
+                    this.classList.toggle('rotated');
+                    document
+                        .getElementById('expandable-div')
+                        .classList.toggle('expanded');
+                });
+        </script>
+
+        <div class="linea-decorativa"></div>
+
+        <section id="section-1" class="contact">
+            <h2 class="texto">Contacto</h2>
+            <p class="texto">
+                Mendoza tiene toda clase de actividades para cada época del año, como
+                disfrutar de unos días calurosos en Los Reyunos o divertirte un finde
+                esquiando en Las Leñas. Contanos qué clase de viaje te gustaría
+                experimentar y te armamos un itinerario personalizado en base a tus
+                preferencias.
+            </p>
+            <div class="texto" id="wrapper-form">
+                <form action="gracias.html" name="contact" method="get" class="texto" id="form-puntos">
+                    <div>
+                        <label for="first_name">* Nombre completo</label>
+                        <input id="first_name" name="first_name" type="text" autofocus required autocomplete="on"
+                            placeholder="Ingrese su nombre completo" />
+                    </div>
+                    <div>
+                        <label for="dniText">* DNI</label>
+                        <input id="dniText" name="dniText" type="text" required autocomplete="on"
+                            placeholder="Ingrese su numero de DNI" />
+                    </div>
+                    <div>
+                        <label for="phone">* Celular</label>
+                        <input id="phone" name="phone" type="tel" placeholder="+5412345678" required />
+                    </div>
+                    <div>
+                        <label for="email">* Email</label>
+                        <input id="email" name="email" type="email" autocomplete="on"
+                            placeholder="juan@mail.com" required />
+                    </div>
+                    <div>
+                        <label for="state">* Provincia</label>
+                        <input list="state-help" id="state" name="state" type="text" placeholder="Neuquén"
+                            required />
+                    </div>
+                    <div class="down" id="cumple">
+                        <label for="birthday">* Fecha de nacimiento</label>
+                        <input id="birthday" name="birthday" type="date" required />
+                    </div>
+
+                    <div class="down" id="presu">
+                        <label for="presupuesto">Presupuesto estimado en USD por persona (no contempla
+                            aéreos)</label>
+
+                        <select name="presupuesto" id="presupuesto">
+                            <option value="bajo">menos de 500</option>
+                            <option value="medio" selected>500 a 800</option>
+                            <option value="medio-alto">800 a 1200</option>
+                            <option value="alto">más de 1200</option>
+                        </select>
+                    </div>
+
+                    <div class="down" id="estacion">
+                        <label for="season">Estación del año en la que te gustaría viajar</label>
+                        <select name="season" id="season">
+                            <option value="spring" selected>Primavera</option>
+                            <option value="summer">Verano</option>
+                            <option value="autumm">Otoño</option>
+                            <option value="winter">Invierno</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <div class="down">
+                            <p class="p">¿Con quién vas?</p>
+                        </div>
+
+                        <div class="input">
+                            <input type="radio" value="familia" name="acompañante" id="familia" />
+                            <label for="familia">Familia</label>
+
+                            <input type="radio" value="pareja" name="acompañante" id="pareja" />
+                            <label for="pareja">Pareja</label>
+
+                            <input type="radio" value="amigos" name="acompañante" id="amigos" />
+                            <label for="amigos">Amigos/as</label>
+
+                            <input type="radio" value="solo" name="acompañante" id="solo" />
+                            <label for="solo">Solo/a</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="down">
+                            <p class="p">¿Qué tipo de experiencia buscás?</p>
+                        </div>
+                        <div class="input">
+                            <input type="radio" value="relax" name="experiencia" id="relax" />
+                            <label for="relax">Relax</label>
+                            <input type="radio" value="aventura" name="experiencia" id="aventura" />
+                            <label for="aventura">Aventura</label>
+                            <input type="radio" value="ambas" name="experiencia" id="ambas" />
+                            <label for="ambas">¡Ambas!</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="down">
+                            <p class="p">¿Qué actividades te interesan?</p>
+                        </div>
+
+                        <div class="input">
+                            <input id="cata" name="actividades" type="checkbox" value="cata" />
+                            <label for="cata">Cata de vinos</label>
+
+                            <input type="checkbox" name="actividades" id="gastronomia" value="gastronomia" />
+                            <label for="gastronomia">Recorrido gastronómico</label>
+
+                            <input type="checkbox" name="actividades" id="termas" value="termas" />
+                            <label for="termas">Termas y spa</label>
+
+                            <input type="checkbox" name="actividades" id="trekking" value="trekking" />
+                            <label for="trekking">Trekking</label>
+
+                            <input type="checkbox" name="actividades" id="turismo" value="turismo" />
+                            <label for="aventura">Turismo aventura</label>
+
+                            <input type="checkbox" name="actividades" id="camping" value="camping" />
+                            <label for="camping">Camping</label>
+                        </div>
+                    </div>
+                    <div class="down"> 
+                        <p class="p">Dejanos cualquier información que te parezca relevante para
+                            poder ofrecerte la mejor atención.</p>
+                        <textarea name="mensaje" rows="15" cols="50" maxlength="1500"></textarea>
+                    </div>
+                    <div class="down">
+                        <label for="dni">Por último, te pedimos una imagen de tu DNI para poder validar tu identidad en caso de realizar reservas a tu nombre.</label>
+                        <input type="file" id="dni" name="dni" accept="image/jpg, image/jpeg, image/png, .doc, .docx">
+                    </div>
+
+                    <datalist id="state-help">
+                        <option>Buenos Aires</option>
+                        <option>CABA</option>
+                        <option>Catamarca</option>
+                        <option>Chaco</option>
+                        <option>Chubut</option>
+                        <option>Córdoba</option>
+                        <option>Corrientes</option>
+                        <option>Entre Ríos</option>
+                        <option>Formosa</option>
+                        <option>Jujuy</option>
+                        <option>La Pampa</option>
+                        <option>La Rioja</option>
+                        <option>Mendoza</option>
+                        <option>Misiones</option>
+                        <option>Neuquén</option>
+                        <option>Río Negro</option>
+                        <option>Salta</option>
+                        <option>San Juan</option>
+                        <option>San Luis</option>
+                        <option>Santa Cruz</option>
+                        <option>Santa Fe</option>
+                        <option>Santiago del Estero</option>
+                        <option>Tierra del Fuego</option>
+                        <option>Tucumán</option>
+                    </datalist>
+
+                    <div >
+                        <input type="submit" class="texto" />
+                    </div>
+                </form>
+                <figure>
+                    <img src="img/otoño.jpg" alt="Mendoza" />
+                </figure>
+            </div>
+        </section>
+
+
+        <footer id="footer">
+            <div class="redes">
+                <a href="https://www.instagram.com/turismo.mendoza/" target="_blank"><i
+                        class="fa-brands fa-square-instagram fa-2x"></i></a>
+                <a href="https://x.com/mendoza_tur" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                <a href="https://www.youtube.com/@turismomendoza8258" target="_blank"><i
+                        class="fa-brands fa-youtube fa-2x"></i></a>
+            </div>
+
+            <div id="contenido">
+                <p class="texto">
+                    <b>Información turista</b>
+                    <br />Av. Peltier 793 (detrás de ATM), Ciudad de Mendoza EMETUR
+                    <br />Av. Peltier 793, Ciudad de Mendoza UPAT <br />Unidad Policial
+                    de Asistencia al Turista Av. San Martín 1143, Ciudad de Mendoza
+                    <br />Teléfono: +54 261 413-2135
+                </p>
+
+                <div id="parte-2">
+                    <p class="texto">
+                        <b>Inscripciones y servicios al Prestador:</b> <br />
+                        <a href="mailto:serviciosturisticos@mendoza.gov.ar">serviciosturisticos@mendoza.gov.ar</a>
+                    </p>
+
+                    <p class="texto">
+                        <b>Privacidad y seguridad</b>
+                    </p>
+                    <p class="texto"><b>Bases legales</b></p>
+                </div>
+
+                <figure>
+                    <a href="https://www.greatwinecapitals.com/capitals/mendoza-argentina/" target="_blank">
+                        <img src="img/logo-wine.png" alt="Logo wine" />
+                    </a>
+                </figure>
+            </div>
+            <div id="alumna" class="texto">
+                <p>
+                    Delfina Féraud - Maquetado y Desarrollo Web - Carlos Ferrer <br />
+            Este sitio es una entrega para el examen final del primer
+            cuatrimestre de la Escuela Da Vinci 2024.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

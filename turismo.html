@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turismo mendocino</title>
+    <script src="https://kit.fontawesome.com/0d333ea443.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="to-top">
+            <a href="#"><i class="fa-solid fa-wine-glass fa-2xl"></i></a>
+        </div>
+        <header id="main-header">
+            <a href="index.html">
+                <h1 id="logo">MENDOZA</h1>
+            </a>
+            <!--
+            -->
+            <nav class="main-navigation">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <label for="check" class="lupa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="turismo.html" id="underline">Turismo</a></li>
+                    <li><a href="vino.html">Tierra del vino</a></li>
+                    <li><a href="gastronomia.html">Gastronomía</a></li>
+                    <li><a href="formulario.html">Contacto</a></li>
+                    <li>
+                        <a href="#"><i id="elipse" class="fa-solid fa-ellipsis fa-2x"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="expandable-div">
+            <p>-1°c</p>
+            <i class="fa-regular fa-snowflake fa-2x"></i>
+
+            <ul class="submenu">
+                <li>
+                    <a href="#" id="bandera"><img src="img/arg-flag.png" alt="Idioma castellano" /></a>
+
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#"><img src="img/eng-flag.png" alt="Idioma inglés" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/bra-flag.png" alt="Idioma portugués" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/ger-flag.png" alt="Idioma alemán" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/chi-flag.png" alt="Idioma chino" /></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-bar">
+                <form>
+                    <input type="text" id="search" name="search" placeholder="Bodega..." />
+                    <button type="submit">
+                        <img src="img/lupa.png" alt="buscar" />
+                    </button>
+                </form>
+            </div>
+        </div>
+        <script>
+            document
+                .getElementById("elipse")
+                .addEventListener("click", function() {
+                    this.classList.toggle("rotated");
+                    document
+                        .getElementById("expandable-div")
+                        .classList.toggle("expanded");
+                });
+        </script>
+
+        <div class="linea-decorativa"></div>
+
+        <section id="turismo">
+            <h2 class="texto">Turismo</h2>
+            <p class="texto">
+                Mendoza presenta un sinfín de atractivos por descubrir, desde los
+                caminos que nos conducen a la Cordillera de los Andes por el Río
+                Mendoza o por Villavicencio y las rutas del vino conociendo bodegas de
+                producción artesanal y establecimientos de tipo industrial en la zona
+                de Maipú y Luján de Cuyo. <br />En esta sección podrás encontrar los
+                puntos turísticos imperdibles para tu próximo viaje a nuestra hermosa
+                provincia.
+            </p>
+
+            <div class="anclas">
+                <ul class="texto">
+                    <li><a href="#villavicencio-ancla">Villavicencio </a></li>
+                    <li><a href="#las-leñas-ancla">Las Leñas </a></li>
+                    <li><a href="#ciudad-mendoza-ancla">Ciudad de Mendoza</a></li>
+                    <li><a href="#cacheuta-ancla">Cacheuta y Potrerillos</a></li>
+                    <li><a href="#san-rafael-ancla">San Rafael</a></li>
+                    <li><a href="#tunuyan-ancla">Valle de Uco</a></li>
+                    <li><a href="#aconcagua-ancla">Aconcagua</a></li>
+                    <li><a href="#ruta-ancla">Ruta del Vino</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="puntos">
+            <h3 class="texto" id="villavicencio-ancla">
+                Reserva Natural Villavicencio
+            </h3>
+            <div class="lugar">
+                <figure>
+                    <img src="img/villavicencio1.jpg" alt="Reserva Natural Villavicencio" />
+                    <img src="img/villavicencio6.jpg" alt="Reserva Natural Villavicencio" id="foto-villavicencio"/>
+                </figure>
+
+                <div class="texto">
+                    <p>
+                        La <strong>Reserva Natural Villavicencio</strong> es un área
+                        natural protegida privada que conserva 60654 hectáreas que
+                        comprenden 3 ambientes: monte, cardonal y puna. Se encuentra en el
+                        departamento de Las Heras, Mendoza, Argentina. Fue creada en el
+                        año 2000. En 2017 fue denominada Sitio Ramsar por la por la
+                        Convención Internacional Ramsar sobre los Humedales, siendo la
+                        primera <abbr title="Área Natural Protegida">ANP</abbr> privada de
+                        la Argentina en tener esta declaración.
+                    </p>
+
+                    <h4>Hotel Villavicencio</h4>
+                    <p>
+                        En 2013 el Hotel Termas de Villavicencio fue declarado
+                        <em>Monumento Histórico Nacional</em>. La Reserva conserva así
+                        patrimonio natural, cultural e histórico en su territorio. Se
+                        puede hacer un recorrido por sus alrededores: terrazas, jardines,
+                        diseñados por <strong>Carlos Thays hijo</strong>, y la Capilla
+                        recientemente restaurada.
+                    </p>
+
+                    <h4>Camino de caracoles</h4>
+                    <p>
+                        Antigua ruta que unió los puertos de Buenos Aires y Valparaíso
+                        durante la época colonial. Destaca su trazado sinuoso entorno a un
+                        paisaje único.
+                    </p>
+
+                    <h4>Mirador El Balcón</h4>
+
+                    <p>
+                        Impactante formación geológica de más de 100 metros de
+                        profundidad, lograda por la acción directa del viento y el agua.
+                    </p>
+
+                    <h4>Cruz de Paramillos</h4>
+                    <p>
+                        Límite de la Reserva, desde donde puede verse el Aconcagua,
+                        <strong>cerro más alto de América</strong>. Punto más alto de la
+                        formación de precordillera (3100
+                        <abbr title="Metros sobre el nivel del mar">msnm</abbr>). Testigo
+                        de la presencia jesuítica y su contribución al desarrollo minero
+                        de la zona.
+                    </p>
+
+                    <h4>Truck 4x4</h4>
+                    <p>
+                        Andes Truck y Reserva Villavicencio se unen para darte una
+                        experiencia única. Ingresa al corazón de la Reserva y conoce
+                        parajes únicos; la experiencia es una perfecta combinación de
+                        adrenalina y disfrute.
+                    </p>
+
+                    <h4>Villavicencio Park</h4>
+                    <p>
+                        Si lo que querés es pura adrenalina, vistas únicas y una aventura
+                        en las alturas, esta es tu oportunidad de vivir todo en un solo
+                        lugar: arborismo, tirolesa y zipline en Villavicencio Park.
+                    </p>
+
+                    <h4>Trekking</h4>
+                    <p>
+                        Aventurate en compañía de los guías y conocé los valores de
+                        conservación, cómo se conforma el paisaje y la biodiversidad de la
+                        Reserva Villavicencio ¡respirá el aire puro de montaña!
+                    </p>
+                    <div class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/FHVDrVO7nNA?si=R4YsXx_m2IqnMiWQ"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper-turismo">
+            <figure class="fotos">
+                <img src="img/villavicencio2.jpg" alt="Reserva Natural Villavicencio" id="villa1"/>
+                <img src="img/villavicencio3.jpg" alt="Llamas en la Reserva Natural Villavicencio" id="villa2"/>
+                <img src="img/villavicencio4.jpg" alt="Tirolesa en la Reserva Natural Villavicencio" id="villa3"/>
+                <img src="img/villavicencio5.jpg" alt="Hotel Villavicencio" id="villa4"/>
+            </figure>
+            <div class="button-holder">
+                <a href="#villa1" id="button-29"></a>
+                <a href="#villa2" id="button-30"></a>
+                <a href="#villa3" id="button-31"></a>
+                <a href="#villa4" id="button-32"></a>
+              </div>
+            </div>
+            <h3 class="texto" id="las-leñas-ancla">Las Leñas</h3>
+
+            <div class="lugar">
+                <figure class="img-mapa">
+                    <img src="img/leñas1.jpg" alt="Las Leñas" />
+                </figure>
+
+                <div class="texto">
+                    <p>
+                        En pleno corazón de la Cordillera de los Andes, en la provincia de
+                        Mendoza y a tan sólo 1.200km de Buenos Aires, se encuentra el
+                        centro de ski <strong>número 1 de América Latina</strong>: Las
+                        Leñas. La magia de este centro de ski de alta montaña es el
+                        resultado de la combinación entre naturaleza, confort, diversión,
+                        aventura y relax.
+                    </p>
+
+                    <p>
+                        Su base está a 2.240
+                        <abbr title="Metros sobre el nivel del mar">msnm</abbr> y su
+                        cumbre a 3.430 metros.
+                    </p>
+
+                    <p>
+                        Este complejo turístico internacional brinda unas vacaciones
+                        inolvidables para todos los amantes del ski y el snowboard. Cuenta
+                        con una calidad de nieve insuperable, gastronomía internacional e
+                        instalaciones hoteleras de primer nivel, dentro de un marco de
+                        seguridad y tranquilidad para toda la familia. Gracias a su
+                        ubicación geográfica, Las Leñas ofrece una prolongada temporada de
+                        nieve que se extiende desde el mes de junio hasta septiembre
+                        inclusive.
+                    </p>
+                    <div class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/qhGW6U9frqc?si=VhehUk9Jf-wmsrLf"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-turismo">
+            <figure class="fotos">
+                <img src="img/leñas2.jpg" alt="Las Leñas" id="lasleñas1"/>
+                <img src="img/leñas3.jpg" alt="Las Leñas" id="lasleñas2"/>
+                <img src="img/leñas4.jpg" alt="Las Leñas" id="lasleñas3"/>
+                <img src="img/leñas5.webp" alt="Las Leñas" id="lasleñas4"/>
+            </figure>
+            <div class="button-holder">
+                <a href="#lasleñas1" id="button-1"></a>
+                <a href="#lasleñas2" id="button-2"></a>
+                <a href="#lasleñas3" id="button-3"></a>
+                <a href="#lasleñas4" id="button-4"></a>
+            </div>
+        </div>
+
+            <h3 class="texto" id="ciudad-mendoza-ancla">Ciudad de Mendoza</h3>
+
+            <div class="lugar">
+                <figure class="img-mapa">
+                    <a href="img/capital-mza.svg" target="_blank"><img src="img/capital-mza.svg"
+                            alt="Mapa de Mendoza Capital" /></a>
+                </figure>
+
+                <div class="texto">
+                    <p>
+                        La Ciudad de Mendoza es la capital política, administrativa y
+                        financiera provincial. Fue el lugar elegido por Pedro del Castillo
+                        para fundar la ciudad que en tiempos remotos fue el centro cívico
+                        provincial donde se levantó el Cabildo de Mendoza, la Iglesia
+                        Matriz y Plaza Mayor. Para resguardar las ruinas de estas
+                        edificaciones se construyó el
+                        <strong>Museo del Área Fundacional</strong> donde los turistas
+                        pueden adentrarse en la historia recorriendo cada una de las salas
+                        que representan el paso del tiempo.
+                    </p>
+
+                    <p>
+                        Un devastador terremoto en el año 1861 dejó bajo los escombros a
+                        la antigua ciudad y fue el motivo para trasladarla hacia el lugar
+                        actual que la alberga y que la caracteriza por sus amplias calles
+                        implantadas con árboles que dibujan túneles y kilómetros de
+                        <em>acequias</em> que transportan el agua de los ríos de montañas.
+                    </p>
+
+                    <p>
+                        Las plazas embellecen la ciudad, cada una de ellas con una marcada
+                        identidad y que le rinden homenaje a países que colaboraron para
+                        construir la nueva ciudad u otros sucesos históricos destacados y
+                        es así que pueden visitarse la
+                        <strong>Plaza Independencia, Plaza San Martín, Plaza España, Plaza
+                            Italia y Plaza Chile.</strong>
+                        Como parte de la idiosincrasia mendocina se destaca el Paseo
+                        Peatonal Sarmiento con sus pérgolas, floridos canteros, comercios
+                        y bares que invitan a sentarse a tomar alguna bebida al aire
+                        libre.
+                    </p>
+
+                    <p>
+                        El <strong>Parque Gral. San Martín</strong> es el exponente máximo
+                        de la labor del hombre que transformó el pedemonte desértico en un
+                        oasis artificial en el que desde la entrada al mismo por los
+                        imponentes portones de estilo inglés, grupos escultóricos,
+                        espacios verdes, fuentes de agua, lago artificial y clubes
+                        deportivos le han dado un sello único a todo aquel que lo recorre
+                        caminando o en vehículo. En él también se encuentra el
+                        <strong>Estadio Mundialista Malvinas Argentinas</strong>, el
+                        <strong>Ecoparque</strong> y el
+                        <strong>Cerro de la Gloria</strong> donde puede apreciarse una
+                        obra escultórica de gran magnitud que es el monumento al Ejército
+                        Libertador.
+                    </p>
+
+                    <p>
+                        Mendoza es sinónimo de vino y los mendocinos le rinden tributo
+                        todos los años durante los meses de enero y febrero con fiestas
+                        departamentales y culminando el primer fin de semana de marzo con
+                        el festejo máximo, la
+                        <em>“Fiesta Nacional de la Vendimia”</em> que se desarrolla en el
+                        <strong>Teatro Griego Frank Romero Day</strong>, ubicado en las
+                        inmediaciones del Parque Gral. San Martín y donde el escenario
+                        mayor al aire libre cuenta con la escenografía natural de los
+                        cerros circundantes.
+                    </p>
+
+                    <p>
+                        La <strong>Arístides</strong> es la más visitada y renombrada de
+                        las arterias sobre la cuales se ha instalado la noche joven de
+                        Mendoza. Arístides Villanueva ofrece restaurantes, barcitos, irish
+                        pubs unos al lado de los otros y está muy cerca del centro en
+                        taxi, para quienes no tienen auto. Es ideal como "previa" para
+                        luego ir a bailar y está preparada para recibir al extranjero
+                        hablando su mismo idioma. Arístides tiene brillo y elegancia y
+                        cuando llega el fin de semana, no cabe un alfiler y la diversión
+                        está asegurada.
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper-turismo">
+            <figure class="fotos">
+                <img src="img/aristides.jpeg" alt="Arístides" id="capital1"/>
+                <img src="img/teatro.jpg" alt="Teatro Griego" id="capital2"/>
+                <img src="img/ciudad.jpeg" alt="Mendoza Capital" id="capital3"/>
+                <img src="img/parque.jpg" alt="Entrada al Parque San Martín" id="capital4"/>
+            </figure>
+            <div class="button-holder">
+                <a href="#capital1" id="button-5"></a>
+                <a href="#capital2" id="button-6"></a>
+                <a href="#capital3" id="button-7"></a>
+                <a href="#capital4" id="button-8"></a>
+            </div>
+        </div>
+
+            <h3 class="texto" id="cacheuta-ancla">Cacheuta y Potrerillos</h3>
+            <div class="lugar">
+                <figure class="img-mapa">
+                    <a href="img/precordillera.svg" target="_blank"><img src="img/precordillera.svg"
+                            alt="Mapa de Alta Montaña" /></a>
+                </figure>
+
+                <div class="texto">
+                    <p>
+                        <strong>Cacheuta</strong> posee aguas termales que oscilan entre
+                        28°C y 40°C en distintos manantiales. Actualmente, la oferta
+                        termal con sus instalaciones especiales permite disfrutar de los
+                        beneficios de estas aguas en las unidades especiales del
+                        <strong>Hotel Termas de Cacheuta</strong> con su spa, integrado a
+                        un Parque de Agua Termal que posee quinchos, churrasqueras,
+                        restaurantes, un almacén para provisiones y una base de turismo de
+                        aventura.
+                    </p>
+                    <p>
+                        En este pueblo también se encuentra la vieja
+                        <strong>Estación de Cacheuta</strong> y su principal protagonista
+                        es el cruce del rio a través del pintoresco
+                        <strong>Puente Colgante</strong>. En sus inmediaciones se destacan
+                        los artesanos del lugar que ofrecen sus productos regionales a los
+                        turistas, como así también, una diversa oferta gastronómica o de
+                        alojamiento en cabañas. En 2018 los distritos de Cacheuta y
+                        Potrerillos volvieron a unirse por un túnel sobre la
+                        <abbr title="Ruta Provincial">RP</abbr>82 ingresando a la villa
+                        por la ruta del perilago.
+                    </p>
+
+                    <p>
+                        Enclavado al oeste se encuentra <strong>Potrerillos</strong>,
+                        lugar donde se encuentra el <em>Dique Potrerillos</em> dotado de
+                        gran belleza. En la localidad de nombre homónimo, a su interior,
+                        existen varias villas de montaña (Las Chacritas, El Carmelo, Las
+                        Carditas, El Salto, Manantiales, Villa de San Jorge, Las Vegas,
+                        Piedras Blancas, Vallecitos y Los Zorzales) muy pintorescas, con
+                        casas de fin de semana, camping, sitios para practicar senderismo
+                        y escalada en roca, todas ubicadas en las cercanías del Cordón del
+                        Plata.
+                    </p>
+
+                    <p>
+                        El valle de Potrerillos al pie del
+                        <strong>Cordón del Plata</strong> es el lugar emblemático para los
+                        amantes de la aventura y la naturaleza, donde el rafting,
+                        trekking, canopy, cabalgatas, son los protagonistas.
+                    </p>
+
+                    <p>
+                        En la localidad de Vallecitos, en una de las quebradas del cordón
+                        antes mencionado, existe la pista de esquí más antigua de la
+                        provincia de Mendoza y una serie de refugios de montaña. Desde esa
+                        localidad, se accede a los cerros más importantes del Cordón del
+                        Plata, tal como El Plata, Mausy, Rincón, Vallecitos, Lomas
+                        Amarillas, Franke, San Bernardo, Lomas Blancas y otros. De manera
+                        permanente, los habitantes de dicha localidad, en todo el año, no
+                        superan las doce personas, constituido básicamente por refugieros.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper-turismo">
+
+                <figure class="fotos">
+                    <img src="img/cacheuta1.jpg" alt="Termas de Cacheuta" id="cacheuta1"/>
+                    <img src="img/cacheuta2.jpg" alt="Puente de Cacheuta" id="cacheuta2"/>
+                    <img src="img/dique-potrerillos.jpg" alt="Entrada a Potrerillos" id="cacheuta3" />
+                    <img src="img/potrerillos2.jpg" alt="Gran Hotel Potrerillos" id="cacheuta4"/>
+                </figure>
+                <div class="button-holder">
+                    <a href="#cacheuta1" id="button-9"></a>
+                    <a href="#cacheuta2" id="button-10"></a>
+                    <a href="#cacheuta3" id="button-11"></a>
+                    <a href="#cacheuta4" id="button-12"></a>
+                </div>
+            </div>
+
+            <h3 class="texto" id="san-rafael-ancla">San Rafael</h3>
+            <div class="lugar">
+                <figure class="img-mapa">
+                    <img src="img/rafael1.jpg" alt="San Rafael" id="foto-sanrafael"/>
+                    <img src="img/sosneado.jpg" alt="El Sosneado" />
+                </figure>
+
+                <div class="texto">
+                    <h4>Cañón del Atuel</h4>
+                    <p>
+                        El <strong>Cañón</strong> comienza en el
+                        <strong>Embalse El Nihuil</strong> a 75 km de la ciudad de San
+                        Rafael y tiene su desembocadura varios kilómetros aguas abajo del
+                        <strong>Embalse Valle Grande</strong>, con una extensión de unos
+                        50 km y una profundidad promedio de 260 m.
+                    </p>
+
+                    <p>
+                        Su recorrido se encuentra acompañado por el resto de las centrales
+                        hidroeléctricas del sistema de generación de energía del Atuel, a
+                        la vera de cuyos embalses (Aisol y Tierras Blancas) se forman
+                        encantadores espacios verdes, ideales para realizar actividades
+                        como mountain bike, avistaje de cóndores, montañismo, senderismo y
+                        trekking, entre otras.
+                    </p>
+
+                    <h4>Valle Grande</h4>
+
+                    <p>
+                        Enmarcado por la hermosura del Cañón del Atuel y las aguas
+                        turbulentas del río del mismo nombre, el rafting, kayak, doky y
+                        cool river aportan una cuota de emoción incomparable. Quienes lo
+                        prefieran podrán llegar hasta el embalse de la presa Valle Grande
+                        y deleitarse con paseos en catamarán y pesca deportiva.
+                    </p>
+
+                    <p>
+                        Las formaciones montañosas que modelan el relieve del lugar
+                        permiten disfrutar de actividades como el trekking, rappel,
+                        senderismo, escalada y tirolesa; vuelos en parapente, safaris
+                        fotográficos y cabalgatas. Los amantes de la aventura sobre ruedas
+                        serán atrapados por las travesías en 4 x 4, cuatriciclo o enduro.
+                        En este bello paraje encontraremos una variada oferta en
+                        alojamiento compuesta por hoteles, cabañas y casas de fin de
+                        semana. La propuesta se completa con opciones gastronómicas que
+                        satisfacen todos los paladares.
+                    </p>
+
+                    <h4>Los Reyunos</h4>
+                    <p>
+                        A 35 Km de la ciudad de San Rafael, nos encontramos con la presa
+                        Los Reyunos, un hipnotizante espejo de agua que combina una
+                        sinfonía de verdes y turquesas, invita a los viajeros a realizar
+                        distintas actividades como pesca de salmónidos y pejerreyes;
+                        alquilar embarcaciones, realizar cabalgatas, caminatas y mountain
+                        bike; buceo, tirobangi, rappel, senderismo y un sinfín de otras
+                        prácticas que conjugan a la perfección con el majestuoso entorno
+                        natural.
+                    </p>
+
+                    <p>
+                        La particularidad que tiene este espejo de agua artificial es que
+                        es uno de los pocos diques del país que cuenta con el
+                        <em>sistema de rebombeo</em> permitiendo recuperar el agua erogada
+                        al invertir sus turbinas para reutilizar este importante elemento
+                        para este gran oasis del sur mendocino.
+                    </p>
+
+                    <h4>El Sosneado</h4>
+                    <p>
+                        Pequeño paraje a 142 km. de la ciudad, zona cordillerana de más de
+                        60 millones de años de antigüedad, es surcado por las aguas del
+                        <strong>Río Atuel</strong> y se encuentra inmerso en los cercanos
+                        paisajes que anuncian la presencia de la Cordillera de Los Andes,
+                        invitando a disfrutar de la extrema serenidad y la aventura que
+                        reina en las montañas. Ideal para realizar actividades al aire
+                        libre que permiten el contacto directo con la Naturaleza en una
+                        experiencia inolvidable. Acampar rodeados de la soledad que reina
+                        en el ambiente, lleva esta aventura a su máximo nivel.
+                    </p>
+
+                    <p>
+                        Realizar una travesía 4 x 4, trepando por los caminos sinuosos de
+                        las elevaciones, practicar el andinismo si las alturas son su
+                        pasión, crearán momentos inolvidables colmados de adrenalina. Este
+                        escenario también es el indicado para las competencias de enduro y
+                        mountain bike.
+                    </p>
+
+                    <p>
+                        Otra opción son las atrapantes cabalgatas para descubrir
+                        magníficos tesoros como la <strong>Cueva del Indio</strong>,
+                        testimonio de la presencia de los pueblos originarios en la región
+                        o aquella que acerca a los viajeros hasta los restos del famoso
+                        avión de los rugbiers uruguayos, cuya epopeya de supervivencia
+                        inspirara la creación de las películas <cite>VIVEN</cite> y
+                        <cite>La Sociedad de la Nieve</cite>.
+                    </p>
+
+                    <p>
+                        Una de las bellezas naturales del lugar es la Laguna de El
+                        Sosneado, donde la pesca es una de las alternativas más elegida, o
+                        las ruinas del antiguo
+                        <strong>Hotel Termas El Sosneado</strong> que aún posee al aire
+                        libre las piletas de aguas templadas en funcionamiento.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper-turismo">
+
+                <figure class="fotos">
+                    <img src="img/rafael2.jpg" alt="San Rafael" id="rafael1"/>
+                    <img src="img/rafael3.jpg" alt="Rafting" id="rafael2"/>
+                    <img src="img/rafael4.jpg" alt="San Rafael" id="rafael3"/>
+                    <img src="img/rafael5.jpg" alt="San Rafael" id="rafael4"/>
+                </figure>
+                <div class="button-holder">
+                    <a href="#rafael1" id="button-13"></a>
+                    <a href="#rafael2" id="button-14"></a>
+                    <a href="#rafael3" id="button-15"></a>
+                    <a href="#rafael4" id="button-16"></a>
+                </div>
+            </div>
+
+            <h3 class="texto" id="tunuyan-ancla">Valle de Uco</h3>
+            <div class="lugar">
+                <figure class="img-mapa">
+                    <a href="img/valle-uco.svg" target="_blank"><img src="img/valle-uco.svg"
+                            alt="Mapa de Valle de Uco" /></a>
+                </figure>
+
+                <div class="texto">
+                    <p>
+                        La mítica Ruta 40 es el gran portal turístico que recorre el Valle
+                        de Uco conformado por los departamentos de
+                        <strong>San Carlos, Tunuyán y Tupungato</strong>, es una verdadera
+                        postal enmarcada entre el Cordón del Plata y el Portillo, con la
+                        vista coronada por el <strong>Cerro Tupungato</strong>, que domina
+                        todas las tierras.
+                    </p>
+
+                    <p>
+                        Por el pintoresco camino de los Cerrillos en Tupungato se
+                        encuentra el mirador del Cristo Rey; un lugar religioso con una
+                        gigante escultura de Jesucristo se impone en el valle y desde
+                        donde pueden apreciarse variados paños con cultivos de frutales de
+                        pepita y carozo, como así también hierbas aromáticas, junto a
+                        extensos viñedos y alamedas.
+                    </p>
+
+                    <p>
+                        El <strong>Cordón del Plata</strong> entre las vegas del Alto de
+                        Las Carreras, sitio de históricas estancias jesuíticas ganaderas y
+                        actualmente zona productora de cebada, papa y alfalfa, se integra
+                        al circuito del Valle de Potrerillos (Luján de Cuyo). La imponente
+                        Quebrada del Cóndor es uno de los magníficos lugares para
+                        disfrutar a pleno una cabalgata y observar nidos de cóndores.
+                    </p>
+
+                    <p>
+                        Esta zona se destaca por la producción de excelentes sidras,
+                        jugos, conservas y esencias, obtenidas en establecimientos
+                        industriales y bodegas de alta gama. Los Caminos del Vino
+                        constituyen una apasionante atracción, en la cual la gastronomía
+                        gourmet maridada con vinos consagrados, alojamientos temáticos y
+                        emprendimientos artesanales se combinan para ofrecer una receta
+                        local para alcanzar la más sabrosa placidez.
+                    </p>
+
+                    <p>
+                        El <strong>Manzano Histórico</strong>, al pie del Cordón del
+                        Portillo fue escenario de una de las históricas rutas del Ejército
+                        de los Andes, distinguiéndose como atractivos el Monumento Retorno
+                        a la Patria, que rememora el reposo del guerrero a su regreso a
+                        suelo argentino. Complementan este sitio la zona de campings,
+                        estación piscícola, centro de interpretación y Vía Crucis.
+                    </p>
+
+                    <p>
+                        Entre los eventos del calendario de festividades sobresalen el
+                        Festival Nacional de la Tonada que se realiza en el mes de febrero
+                        en Tunuyán y la Fiesta de la Tradición de San Carlos en el mes de
+                        noviembre.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrapper-turismo">
+
+                <figure class="fotos">
+                    <img src="img/uco.jpg" alt="Valle de Uco" id="uco1"/>
+                    <img src="img/uco2.jpg" alt="Valle de Uco" id="uco2"/>
+                    <img src="img/uco3.jpg" alt="Valle de Uco" id="uco3"/>
+                    <img src="img/uco4.jpg" alt="Valle de Uco" id="uco4"/>
+                </figure>
+                <div class="button-holder">
+                    <a href="#uco1" id="button-17"></a>
+                    <a href="#uco2" id="button-18"></a>
+                    <a href="#uco3" id="button-19"></a>
+                    <a href="#uco4" id="button-20"></a>
+                </div>
+            </div>
+
+            <h3 class="texto" id="aconcagua-ancla">Parque Provincial Aconcagua</h3>
+            <div class="lugar">
+                <figure>
+                    <img src="img/aconcagua3.jpg" alt="Cerro Aconcagua" />
+                </figure>
+
+                <div class="texto">
+                    <p>
+                        El <strong>Parque Provincial Aconcagua</strong> es el atractivo
+                        emblema de esta zona cuya temporada se extiende desde noviembre a
+                        abril. Los andinistas de todo el mundo llegan con el objetivo de
+                        alcanzar la cima o simplemente poder realizar un trekking corto o
+                        largo entre caprichosas geoformas, arroyos y nieves perennes.
+                    </p>
+
+                    <p>
+                        Se ubica en el noroeste de la provincia de Mendoza, departamento
+                        Las Heras, se encuentra a 165 km de la ciudad de Mendoza, y a 75
+                        km de Uspallata, por la <abbr title="Ruta Nacional">RN</abbr>7,
+                        que aloja al cerro Aconcagua, de 6962.8
+                        <abbr title="Metros sobre el nivel del mar">msnm</abbr>.
+                    </p>
+
+                    <p>
+                        En 1983 fue declarado <em>área natural protegida</em>. Es una de
+                        las 17 reservas naturales que forman el sistema de áreas naturales
+                        protegidas de la provincia de Mendoza.
+                    </p>
+
+                    <p>
+                        El parque alberga grandes glaciares, que actúan como una reserva
+                        hídrica. Se encuentran importantes sitios arqueológicos. Es el
+                        escenario preferido para los andinistas.
+                    </p>
+
+                    <p>
+                        La Laguna glaciaria de Horcones, a 2.950
+                        <abbr title="Metros sobre el nivel del mar">msnm</abbr>, se
+                        alimenta de las aguas de deshielo del cerro Tolosa, con un
+                        perímetro no mayor a los 80 metros. Esta laguna es parte de un
+                        pequeño humedal formado por cinco lagunas y vegas; estos humedales
+                        se caracterizan por presentar una diversidad biológica de plantas
+                        y animales.
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper-turismo">
+
+                <figure class="fotos">
+                <img src="img/aconcagua2.JPG" alt="Parque Provincial Aconcagua" id="aconcagua1"/>
+                <img src="img/horcones.jpg" alt="Laguna Horcones" id="aconcagua2"/>
+                <img src="img/mulas.jpg" alt="Plaza de Mulas" id="aconcagua3"/>
+                <img src="img/aconcagua1.jpg" alt="Parque Provincial Aconcagua" id="aconcagua4"/>
+            </figure>
+            <div class="button-holder">
+                <a href="#aconcagua1" id="button-21"></a>
+                <a href="#aconcagua2" id="button-22"></a>
+                <a href="#aconcagua3" id="button-23"></a>
+                <a href="#aconcagua4" id="button-24"></a>
+            </div>
+        </div>
+
+            <h3 class="texto" id="ruta-ancla">Ruta del Vino</h3>
+            <div class="lugar">
+                <figure>
+                    <img src="img/ruta6.jpg" alt="Bodega Salentein" id="foto-salen"/>
+                    <img src="img/ruta4.webp" alt="Bodega" id="foto-ruta"/>
+                    <img src="img/ruta3.jpg" alt="Viña" />
+                </figure>
+
+                <div class="texto">
+                    <p>
+                        Mendoza tiene más de 130 bodegas que abren sus puertas para
+                        deleitarnos con sus diferentes variedades de vino: blanco, tinto,
+                        malbec, cabernet sauvignon y cabernet franc, entre tantas otras.
+                        Una experiencia para principiantes y expertos catadores. Acá te
+                        traemos cinco imperdibles para que tengas en cuenta a la hora de
+                        viajar.
+                    </p>
+
+                    <ol>
+                        <li>
+                            <h4>Salentein, en Valle de uco</h4>
+                            <p>
+                                Con un paisaje privilegiado, Salentein está compuesto por tres
+                                fincas entre los 1050 y 1700
+                                <abbr title="Metros sobre el nivel del mar">msnm</abbr>, a los
+                                pies de la Cordillera de los Andes. En esta bodega convergen
+                                el arte, la arquitectura, la gastronomía y el buen vino.
+                            </p>
+                            <p>
+                                Salentein produce 2 millones de litros de vino por año, y
+                                ofrece distintos tours para recorrer su bodega y almorzar en
+                                su restaurante. ¡Un must para no perderse!
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Lagarde, en Luján de Cuyo</h4>
+                            <p>
+                                Esta bodega fue fundada en 1897 y cuenta, hoy en día, con
+                                viñedos orgánicos y un restaurante reconocido a nivel
+                                internacional. Además de una increíble visita por su bodega,
+                                aquí se encuentra Fogón, un restaurante con mesas al borde del
+                                viñedo.
+                            </p>
+                            <p>
+                                El mismo fue elegido en 2021 por Trip Advisor como uno de los
+                                mejores de América del Sur en la categoría "cocina elegante".
+                                Aquí podés optar por un menú de 7 o 4 pasos, o por elección de
+                                comida a la carta. Sin dudas, es una parada imperdible en tu
+                                viaje.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Rutini Wines, en Valle de Uco</h4>
+                            <p>
+                                Rutini Wines tiene 255 hectáreas de viñedos, en altitudes que
+                                van desde los 1.050 hasta los 1.200
+                                <abbr title="Metros sobre el nivel del mar">msnm</abbr>. La
+                                bodega ofrece vinos de excepcional, como los conocidos Rutini,
+                                Trumpeter, Encuentro o Antología.
+                            </p>
+                            <p>
+                                Durante la visita, los guías enseñan cuáles son los pasos de
+                                producción del vino y cuentan la historia de la familia. El
+                                tour culmina con la degustación de dos vinos de la casa.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Chandon, en Luján de Cuyo</h4>
+                            <p>
+                                Si dejamos de lado a los vinos por un rato, una de las bodegas
+                                de espumantes más famosas de Mendoza es la Bodega Chandon. La
+                                misma se encuentra en la localidad de Agrelo y ofrece un tour
+                                guiado con degustación de varietales de espumantes.
+                            </p>
+                            <p>
+                                Durante el recorrido podés visitar los viñedos, la fábrica y
+                                la cava, y conocer la historia del champagne y cómo es su
+                                proceso de producción. Además, cuenta con un moderno bistró
+                                con platos elaborados especialmente para maridar con sus
+                                espumantes.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Zuccardi, en Valle de Uco</h4>
+                            <p>
+                                En 2019 fue elegido como el mejor viñedo del mundo, y creemos
+                                que esa es una razón más que suficiente para que la sumes a tu
+                                lista. En Zuccardi podés conocer los distintos espacios de la
+                                bodega, degustar sus vinos, y almorzar en su restaurante
+                                Piedra Infinita Cocina.
+                            </p>
+                            <p>
+                                Además de disfrutar de una increíble vista a los viñedos, los
+                                comensales aquí pueden probar un menú de 4 pasos creado
+                                especialmente con productos regionales y acompañarlos con los
+                                mejores vinos Zuccardi.
+                            </p>
+                        </li>
+                    </ol>
+                    <h4>¿En qué época conviene hacer la Ruta del Vino?</h4>
+                    <p>
+                        Te recomendamos visitar Mendoza en febrero, marzo y abril
+                        especialmente, porque es la época de la vendimia y todas las
+                        bodegas funcionan a la perfección. Acá vas a poder apreciar la
+                        cosecha de las uvas, y probarlas directamente de las plantas. ¡No
+                        vas a poder creer su sabor!
+                    </p>
+
+                    <p>
+                        Si decidís viajar en estas fechas recordá reservar todo con
+                        anticipación, porque son muchas las personas que, como vos,
+                        quieren vivir la experiencia de ver funcionar la bodega en sus
+                        mejores meses. Igualmente, si en estas fechas se te complica
+                        viajar, ¡no te preocupes! Mendoza es un excelente destino en toda
+                        época del año.
+                    </p>
+                    <p>
+                        Podés encontrar más información sobre el mundo del vino en nuestra
+                        sección <a href="vino.html" target="_blank">Tierra del vino</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper-turismo">
+
+                <figure class="fotos">
+                    <img src="img/ruta2.webp" alt="Vino" id="ruta1"/>
+                    <img src="img/ruta5.jpg" alt="Bodega" id="ruta2"/>
+                    <img src="img/ruta7.webp" alt="Lagarde" id="ruta3"/>
+                    <img src="img/ruta8.jpg" alt="Paseo por las viñas" id="ruta4"/>
+                </figure>
+                <div class="button-holder">
+                    <a href="#ruta1" id="button-25"></a>
+                    <a href="#ruta2" id="button-26"></a>
+                    <a href="#ruta3" id="button-27"></a>
+                    <a href="#ruta4" id="button-28"></a>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="redes">
+                <a href="https://www.instagram.com/turismo.mendoza/" target="_blank"><i
+                        class="fa-brands fa-square-instagram fa-2x"></i></a>
+                <a href="https://x.com/mendoza_tur" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                <a href="https://www.youtube.com/@turismomendoza8258" target="_blank"><i
+                        class="fa-brands fa-youtube fa-2x"></i></a>
+            </div>
+
+            <div id="contenido">
+                <p class="texto">
+                    <b>Información turista</b>
+                    <br />Av. Peltier 793 (detrás de ATM), Ciudad de Mendoza EMETUR
+                    <br />Av. Peltier 793, Ciudad de Mendoza UPAT <br />Unidad Policial
+                    de Asistencia al Turista Av. San Martín 1143, Ciudad de Mendoza
+                    <br />Teléfono: +54 261 413-2135
+                </p>
+
+                <div id="parte-2">
+                    <p class="texto">
+                        <b>Inscripciones y servicios al Prestador:</b> <br />
+                        <a href="mailto:serviciosturisticos@mendoza.gov.ar">serviciosturisticos@mendoza.gov.ar</a>
+                    </p>
+
+                    <p class="texto">
+                        <b>Privacidad y seguridad</b>
+                    </p>
+                    <p class="texto"><b>Bases legales</b></p>
+                </div>
+
+                <figure>
+                    <a href="https://www.greatwinecapitals.com/capitals/mendoza-argentina/" target="_blank">
+                        <img src="img/logo-wine.png" alt="Logo wine" />
+                    </a>
+                </figure>
+            </div>
+            <div id="alumna" class="texto">
+                <p>
+                    Delfina Féraud - Maquetado y Desarrollo Web - Carlos Ferrer <br />
+            Este sitio es una entrega para el examen final del primer
+            cuatrimestre de la Escuela Da Vinci 2024.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

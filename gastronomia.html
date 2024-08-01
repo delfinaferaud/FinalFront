@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mendoza</title>
+    <script src="https://kit.fontawesome.com/0d333ea443.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="to-top">
+            <a href="#"><i class="fa-solid fa-wine-glass fa-2xl"></i></a>
+        </div>
+        <header id="main-header">
+            <a href="index.html">
+                <h1 id="logo">MENDOZA</h1>
+            </a>
+            <!--
+            -->
+            <nav class="main-navigation">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <label for="check" class="lupa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="turismo.html">Turismo</a></li>
+                    <li><a href="vino.html">Tierra del vino</a></li>
+                    <li><a href="gastronomia.html" id="underline">Gastronomía</a></li>
+                    <li><a href="formulario.html">Contacto</a></li>
+                    <li>
+                        <a href="#"><i id="elipse" class="fa-solid fa-ellipsis fa-2x"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="expandable-div">
+            <p>-1°c</p>
+            <i class="fa-regular fa-snowflake fa-2x"></i>
+
+            <ul class="submenu">
+                <li>
+                    <a href="#" id="bandera"><img src="img/arg-flag.png" alt="Idioma castellano" /></a>
+
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#"><img src="img/eng-flag.png" alt="Idioma inglés" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/bra-flag.png" alt="Idioma portugués" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/ger-flag.png" alt="Idioma alemán" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/chi-flag.png" alt="Idioma chino" /></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="search-bar">
+                <form>
+                    <input type="text" id="search" name="search" placeholder="Bodega..." />
+                    <button type="submit">
+                        <img src="img/lupa.png" alt="buscar" />
+                    </button>
+                </form>
+            </div>
+        </div>
+        <script>
+            document
+                .getElementById("elipse")
+                .addEventListener("click", function() {
+                    this.classList.toggle("rotated");
+                    document
+                        .getElementById("expandable-div")
+                        .classList.toggle("expanded");
+                });
+        </script>
+
+        <div class="linea-decorativa"></div>
+
+
+
+        <section id="gastronomia">
+            <h2 class="texto">Gastronomía</h2>
+            <p class="texto">
+                Mendoza se consagra como Capital Iberoamericana de la Armonía Gastronómica por el valor que emana del trabajo que se realiza en esta tierra mediante la selección de cada ingrediente, rescatando y valorizando sus costumbres. Nuestra provincia es un destino donde la naturaleza y la cultura se fusionan, dando como resultado una gastronomía identitaria de alta cocina. Paralelamente, Mendoza es reconocida a nivel global por su excelencia en el sector enoturístico. Este posicionamiento es avalado por la Academia Ibeoroamericana de Gastronomía y la Academia Argentina de Gastronomía, destacando la excelencia gastronómica y ponderando el vino como alimento. 
+            </p>
+        </section>
+
+        <section id="puntos">
+            <h3 class="texto" >Estrellas Michelin </h3>
+            <div class="lugar">
+                <figure>
+                    <img src="img/zonda.jpg" alt="Zonda" />
+                    <img src="img/vigil.jpg" alt="Casa Vigil" />
+                    <img src="img/brindillas.jpg" alt="Brindillas" />
+                </figure>
+
+                <div class="texto">
+                    <p>
+                        Mendoza fue la gran ganadora de la Gala de Premiación. De las 10 estrellas otorgadas por la Guía Michelin a la Argentina, siete quedaron en la provincia y tres en Ciudad de Buenos Aires. Cuatro restaurantes mendocinos consiguieron por primera vez una estrella Michelin; otros 15 fueron incorporados a la prestigiosa guía gastronómica y tres recibieron estrellas verdes, que premian el trabajo eco sustentable.
+                    </p>
+                    <p>
+                        Las <strong>estrellas Michelin</strong> son los galardones más ansiados por los restaurantes y chefs de todo el mundo. Hoy Mendoza, logra un lugar de privilegio en esta Guía al obtener cuatro estrellas  y otras tres en la categoría restaurantes sostenibles. Mientras que tres restaurantes de Buenos Aires alcanzaron el máximo galardón, uno de ello con dos estrellas: <strong>Aramburu</strong>, único en el país con esta distinción. <br>
+                        De esta manera, los restaurantes argentinos con Estrella Michelin y sus chefs son:
+                    </p>
+
+                    <ul>
+                        <li>
+                            Zonda, Cocina de Paisaje, chef Augusto García.                            
+                        </li>
+                        <li>
+                            Casa Vigil, chef Iván Azar.
+                        </li>
+                        <li>
+                            Brindillas, chef Mariano Gallego.
+                        </li>
+                        <li>
+                            Azafrán, chef Sebastián Weigandt.
+                        </li>
+                        <li>
+                            Don Julio, chef Guido Tassi (Buenos Aires).
+                        </li>
+                        <li>
+                            Trescha, chef Tomás Treschansky (Buenos Aires).
+                        </li>
+                        <li>
+                            Aramburu: Gonzalo Aramburu (Buenos Aires). 2 Estrellas Michelin.
+                        </li>
+                    </ul>
+                    
+                    <p>
+                        Los restaurantes sostenibles, que recibieron la estrella verde son: Casa Vigil, Zonda, Cocina de Paisaje y Riccitelli Bistró.
+                    </p>
+                    <p>
+                        
+                        La Ceremonia se llevó a cabo en el Arenas Studios de la Ciudad de Buenos Aires, con la conducción de <strong>Iván de Pineda</strong>. Los esperados anuncios fueron recibidos con gran entusiasmo y emoción por la comitiva mendocina, encabezada por la ministra de Cultura y Turismo, <strong>Nora Vicario</strong>, representantes de los establecimientos mendocinos, autoridades de cámaras y asociaciones del rubro gastronómico y turístico y periodistas especializados.
+                    </p>
+
+                    <p>
+                        <q>Es un orgullo felicitar, en nombre del gobernador Rodolfo Suarez, a los cinco restaurantes y a sus chefs por haber logrado un hito en la historia de la gastronomía mendocina: ser el primer destino hispanoamericano, junto con la Ciudad de Buenos Aires, en recibir el prestigioso reconocimiento de las estrellas Michelin</q>, destacó la ministra Nora Vicario.
+                    </p>
+                    <p>
+                        <q>Este galardón es el resultado del trabajo, la pasión y la excelencia que caracterizan a los restaurantes, bodegas, productores y trabajadores gastronómicos y vitivinícolas de nuestra provincia, que han sabido innovar y crecer de la mano del impulso público y privado. Significa un valioso aporte a la marca Mendoza, al posicionamiento de la provincia como destino turístico internacional de todo el año y a la competitividad bajo estándares internacionales, lo que se traduce en una oportunidad para generar más turismo, inversiones, desarrollo económico y empleo</q>, remarcó la ministra.
+                    </p>
+                    <p>
+                        Mendoza es reconocida por sus altos niveles en servicios gastronómicos y cuenta con 4.800 espacios gastronómicos de diferentes categorías y características, entre ellos, restaurantes en bodegas. Además, cuenta con más de 206 bodegas abiertas al turismo en las distintas regiones vitivinícolas de la provincia. Sin duda, estos reconocimientos sirven como un gran potenciador para el resto de los restaurantes y espacios gastronómicos mendocinos.
+                    </p>
+                    
+                        <h4>Mendoza, la gran protagonista</h4>
+                        <p>
+                            De los 57 restaurantes seleccionados por Michelin, 15 están en Mendoza: <strong>1884 Francis Mallmann, 5 Suelos, Abrasado, Angélica Cocina Maestra, Centauro, Espacio Trapiche, Fogón Cocina de Viñedo, La Vida, Osadía de Crear, Piedra Infinita, Quimera Bistró, Renacer, Riccitelli Bistró, Ruca Malen y Soberana</strong>.
+                        </p>
+                        <p>
+                            Estos restaurantes estarán a partir de ahora en las recomendaciones de la centenaria y prestigiosa guía del gastroturismo, demostrando una vez más la calidad que tiene nuestro destino como polo gastronómico por su variada oferta de restaurantes y platos que van desde las tradiciones argentinas hasta las más refinadas recetas internacionales que, armonizado con los destacados vinos, se convierten en una amalgama perfecta.
+                        </p>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WkTafRmamFM?si=5TpZKvIwF4HuJiGO" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                </div>
+                
+            </div>
+            
+        </section>
+
+        
+
+        
+
+
+        <footer id="footer">
+            <div class="redes">
+                <a href="https://www.instagram.com/turismo.mendoza/" target="_blank"><i
+                        class="fa-brands fa-square-instagram fa-2x"></i></a>
+                <a href="https://x.com/mendoza_tur" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                <a href="https://www.youtube.com/@turismomendoza8258" target="_blank"><i
+                        class="fa-brands fa-youtube fa-2x"></i></a>
+            </div>
+
+            <div id="contenido">
+                <p class="texto">
+                    <b>Información turista</b>
+                    <br />Av. Peltier 793 (detrás de ATM), Ciudad de Mendoza EMETUR
+                    <br />Av. Peltier 793, Ciudad de Mendoza UPAT <br />Unidad Policial
+                    de Asistencia al Turista Av. San Martín 1143, Ciudad de Mendoza
+                    <br />Teléfono: +54 261 413-2135
+                </p>
+
+                <div id="parte-2">
+                    <p class="texto">
+                        <b>Inscripciones y servicios al Prestador:</b> <br />
+                        <a href="mailto:serviciosturisticos@mendoza.gov.ar">serviciosturisticos@mendoza.gov.ar</a>
+                    </p>
+
+                    <p class="texto">
+                        <b>Privacidad y seguridad</b>
+                    </p>
+                    <p class="texto"><b>Bases legales</b></p>
+                </div>
+
+                <figure>
+                    <a href="https://www.greatwinecapitals.com/capitals/mendoza-argentina/" target="_blank">
+                        <img src="img/logo-wine.png" alt="Logo wine" />
+                    </a>
+                </figure>
+            </div>
+            <div id="alumna" class="texto">
+                <p>
+                    Delfina Féraud - Maquetado y Desarrollo Web - Carlos Ferrer <br />
+            Este sitio es una entrega para el examen final del primer
+            cuatrimestre de la Escuela Da Vinci 2024.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
