@@ -16,19 +16,13 @@ a{
     text-decoration: none;
 }
 
-.checkbtn{
-    font-size: 40px;
-    line-height: 80px;
-    cursor: pointer;
-    display: none;
-}
+.checkbtn,
 .lupa{
-    font-size: 40px;
-    line-height: 80px;
+    font-size: 2rem;
     cursor: pointer;
     display: none;
-
 }
+
 
 #check{
     display: none;
@@ -53,8 +47,14 @@ a{
     
 }
 
+.main-navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
-#main-header #logo{
+
+#main-header h1{
     padding: 20px 0;
     font-size: 3rem; 
     font-style: normal; 
@@ -976,28 +976,37 @@ input[type=submit]:hover{
 
 @media screen and (max-width: 480px){
 
+    .main-navigation{
+        align-items: center;
+        justify-content: space-around;  
+    }
+
     .checkbtn{
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        padding-left: 20px;
+        display: inline;
+        order: 1;
     }
 
     .lupa{
-        display:inline-block;
-        padding-right: 20px;
-
+        display: inline;
+        order: 3;
     }
 
     #main-header{
-        padding-left: 30px;
-        margin-bottom: -10px;
-
+        position: static;  
     }
 
-    #main-header #logo{
-        margin-left: 90px;
+    #main-header h1{
+        font-size: 2.5rem;
+    }
 
+    h2.texto, 
+    h3.texto
+    {
+        text-align-last: center;
+        text-align: center;
+    }
+    #main-header #logo{
+        order: 2;
     }
 
     #main-header .main-navigation ul{
@@ -1015,10 +1024,10 @@ input[type=submit]:hover{
 
     #main-header .main-navigation ul li{
         padding-top: 10px;
+        text-align-last: center;
     }
     
     #main-header .main-navigation ul li a{
-        font-size: 1.25em;
         color: #faebd7;
         margin: 10px;
         
@@ -1058,9 +1067,7 @@ input[type=submit]:hover{
     }
 
     #footer figure{
-        margin-left: 280px;
-        margin-top: 110px;
-        position: absolute;
+        display: none;
     }
     
     #alumna{
@@ -1088,7 +1095,7 @@ input[type=submit]:hover{
     
     #box-2 h2{
         font-size: 2em;
-        margin-top: 120px;
+        margin: 120px 10px 0;
     }
 
     #box-2 #imagenes{
@@ -1366,18 +1373,22 @@ input[type=submit]:hover{
          opacity: 1;
     }
 
+    .vino{
+        height: 340px;
+    }
 
     .noticias{
         margin: 10px;
         display: flex;
         justify-content: center;
+        height: 100%;
     }
 
     .noticias .wrapper-noticia{
         display: flex;
         justify-content: flex-start;
-        /* margin: 10px; */
-        width: 450px;
+        width: 100%;
+        
         overflow-x: hidden;
         scroll-snap-type: x mandatory;
         
@@ -1389,22 +1400,26 @@ input[type=submit]:hover{
         flex: 1 0 100%;
         scroll-snap-align: center;
         object-fit: cover;
-        /* width: 450px; */
+        width: 100%;
         position: relative;
+        margin-bottom: 0;
+        height: 100%;
     }
 
+    
+
     .caja-noticia{
-        width: 430px;
+        width: 100%;
         margin-left: 8px;
         position: absolute;
-        background-color: rgba(177, 135, 104, 0.7);
+        background-color: rgba(177, 135, 104, 0.8);
     }
     .caja-noticia p{
         font-size: 0.9rem;
     }
 
     .noticia img{
-        width: 450px;
+        width: 100%;
     }
 
     .noticias .button-holder
@@ -1494,10 +1509,14 @@ input[type=submit]:hover{
         margin-top: 50px;
         bottom: 0;
     }   
+
+    #to-top{
+        bottom: 80px;
+    }
     
 }
 
-@media screen and (max-width: 409px){
+@media screen and (max-width: 426px){
 
     #box-2 img{
         width: 150px;
